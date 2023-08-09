@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="index.css">
+    <title>Escolha</title>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <div class="cabecalho">
+            <img alt="hamburguer" id="menu" src="../imgs/menu.png" />
+            <div class="mostrarImagem">
+                <img id="imagemP" alt="suco" />
+            </div>
+            <img src='../imgs/avatar2.png' height="50" alt="avatar" />
+        </div>
+        <div class='escrito'>
+            <p>Coffee</p>
+            <h2 id='nomeComida'></h2>
+            <p>É hora do café!</p>
+        </div>
+        <p id="detalhes">cappucino is a tradicional drink...</p>
+    </header>
+    <main>
+
+        <div class='definindoSize'>
+            <h3>Tamanho</h3>
+            <select class="tamanhos">
+                <option value="vazio"></option>
+                <option value="grande">Grande (500ml)</option>
+                <option value="medio">Médio (300ml)</option>
+                <option value='pequeno'>Pequeno(200ml)</option>
+            </select>
+        </div>
+
+
+        <div class="temperatura">
+            <h3>Temperatura</h3>
+            <select class="temperaturas">
+                <optionv value='vazio'></option>
+                <option value='quente'>Quente</option>
+                <option value='morno'>Morno</option>
+                <option value='frio'>Gelado</option>
+            </select>
+        </div>
+
+        <div class='acucar'>
+            <h3>Acuçar</h3>
+            <select class="acucars">
+                <option value="nada"></option>
+                <option value="acucar">Açucar</option>
+                <option value="mel">Mel</option>
+                <option value='adocante'>Adoçante</option>
+            </select>
+        </div>
+
+        <div class='leite'>
+            <h3>Leite</h3>
+            <select class="leites">
+                <option value="nada"></option>
+                <option value='comum'>Leite comum</option>
+                <option value='amendoa'>Leite de amendôa</option>
+                <option value="coco">Leite de coco</option>
+            </select>
+        </div>
+        <div class="infos">
+            <input type="text" id='valor' disabled/>
+            <button id="btnCompra">Compre Agora</button>
+        </div>
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
