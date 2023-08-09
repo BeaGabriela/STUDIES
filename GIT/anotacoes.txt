@@ -1,0 +1,32 @@
+Versionamento -> Registro de mudanças em aequivos, que possibilita recuperação ou acesso a versões anteriores.
+			  -> Desenvolvimento de código em colaboração com outros integrantes.
+
+
+O que é o git?
+	Guarda registros de versões do projeto.
+	
+******SNAPSHOTS(fotos)*******
+
+Extensão -> GitLens.
+
+
+git diff -> Mostra as linhas que foram modificadas.
+git diff --staged -> Mostra as coisas semelhança, só depende do estado que está o arquivo.
+git log -> Traz o histórico dos commits. Sair (q)
+git restore ->  Remover a modificação, voltando para o estado anterior.
+git restore --staged arquivo -> Remove da area de mudança. Resumindo, remove do comando 'add'
+
+BRANCHs->
+	Abrir uma ramificação.
+		
+	git branch 'nome' -> Cria uma nova branch
+	git log --online --decorade -> Indica a brach e o histórico;
+	git checkout 'branch que você quer ir' --> Muda a branch
+	
+	
+	git merge -> Juntar branchs
+	git merge 'nome da branch que voce quer trazer' -> Junta as branchs
+	
+	
+
+GITHUB -> Como uma rede social
