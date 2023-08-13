@@ -42,6 +42,16 @@ const readOne = async (req, res) => {
     res.status(200).json(comida).end();
 }
 
+const LookingFor = async (req, res) => {
+    let comida = await prisma.Comida.findMany({
+        where: {
+        nome:req.params.nome
+        }
+    });
+
+    res.status(200).json(comida).end();
+}
+
 const update = async (req, res) => {
     const comida = await prisma.Comida.update({
         where: {
@@ -69,6 +79,7 @@ module.exports = {
     read,
     readOne,
     update,
-    remove
+    remove,
+    LookingFor
 
 }

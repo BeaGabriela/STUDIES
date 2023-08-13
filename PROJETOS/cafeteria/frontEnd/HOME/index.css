@@ -201,6 +201,13 @@ h2 {
 
 }
 
+.menuLateral>a {
+    color:#331602;
+    cursor:pointer;
+    
+}
+
+
 #fundoImagem{
     height: 12vh;
     width: 21.5vw;
