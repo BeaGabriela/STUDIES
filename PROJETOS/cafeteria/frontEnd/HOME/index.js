@@ -76,9 +76,10 @@ function carregar() {
                     imgBotao.src = '../imgs/+.png';
                     imgBotao.height = '20vh';
                     imgBotao.onclick = () => VisualizarItem(comida.id);
+                                
                     DivQuadrado.appendChild(imgBotao);
 
-                    alinhandoQuadrado.appendChild(DivQuadrado);
+                    document.querySelector('.alinhandoOsQuadrados').appendChild(DivQuadrado);
                     }else if(comida.id_topico == 2){
                         const QuadradoCha = document.querySelector('.quadradoCha').cloneNode(true)
                         QuadradoCha.classList.remove('model')
