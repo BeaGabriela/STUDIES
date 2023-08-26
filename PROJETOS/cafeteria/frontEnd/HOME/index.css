@@ -36,7 +36,7 @@ nav {
     top: 13.5vh;
 }
 
-.procurar>input {
+.procurar>select {
     width: 50vw;
     height: 6vh;
     border-radius: 20px;
@@ -51,6 +51,10 @@ nav {
 
 .procurar>input::placeholder {
     color: #ffff;
+}
+
+.procurar>select>option{
+    border-radius:10px;
 }
 
 main {

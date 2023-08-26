@@ -42,6 +42,16 @@ const readOne = async (req, res) => {
     res.status(200).json(comida).end();
 }
 
+const filtroTopico = async (req, res) => {
+    let comida = await prisma.Comida.findUnique({
+        where: {
+            id_topico: Number(req.params.id_topico)
+        }
+    });
+
+    res.status(200).json(comida).end();
+}
+
 const LookingFor = async (req, res) => {
     let comida = await prisma.Comida.findMany({
         where: {
@@ -80,6 +90,7 @@ module.exports = {
     readOne,
     update,
     remove,
-    LookingFor
+    LookingFor,
+    filtroTopico
 
 }
