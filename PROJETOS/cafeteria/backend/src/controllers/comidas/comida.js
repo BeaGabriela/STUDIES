@@ -43,7 +43,7 @@ const readOne = async (req, res) => {
 }
 
 const filtroTopico = async (req, res) => {
-    let comida = await prisma.Comida.findUnique({
+    let comida = await prisma.Comida.findMany({
         where: {
             id_topico: Number(req.params.id_topico)
         }
