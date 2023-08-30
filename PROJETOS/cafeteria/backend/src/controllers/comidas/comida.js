@@ -12,7 +12,7 @@ const create = async (req, res) => {
 
 
 const read = async (req, res) => {
-    let comida = await prisma.Comida.findMany({
+    let comida = await prisma.Comida.findUnique({
         select: {
             id: true,
             id_topico: true,

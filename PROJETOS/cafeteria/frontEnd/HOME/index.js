@@ -146,9 +146,17 @@ function carregar(){
 }
 
 function fetchComidas(topico){
-    
+    var converter = 0
     topico = ''
-    fetch('http://localhost:3000/procurarPorNome/' + topico)
+
+    if(topico != 0 || topico != ''){
+        converter = Number(topico)
+    }else{
+        converter = ''
+    }
+
+    console.log(converter)
+    fetch('http://localhost:3000/procurarPorNome/'+ converter)
     .then(res => res.json())
     .then(u => {
         console.log(u);
