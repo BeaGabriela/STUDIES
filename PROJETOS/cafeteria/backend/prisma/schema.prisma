@@ -3,6 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
+  output   = "./generated/client"
 }
 
 datasource db {
@@ -23,6 +24,8 @@ model Usuario {
   senha String
   nivel Int
   pedido Pedidos[]
+
+   confirmed Boolean  @default(false)
   niveis nivel @relation(fields: [nivel], references: [id])
 }
 
