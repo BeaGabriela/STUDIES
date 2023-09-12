@@ -3,7 +3,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "./generated/client"
 }
 
 datasource db {
@@ -79,4 +78,4 @@ model Finalizar {
   entrega     String
   pagamento String
   comidas Pedidos @relation(fields: [id_pedido], references: [id])
-}
+  }

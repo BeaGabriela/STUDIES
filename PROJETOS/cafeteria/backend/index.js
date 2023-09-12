@@ -11,10 +11,13 @@ const finalizar = require('../backend/src/routes/finalizar.routes')
 const popular = require('../backend/src/routes/popular.routes')
 const pedidos = require('../backend/src/routes/pedidos.routes')
 
+ const email = require('../backend/src/controllers/usuarios/server.js')
+
 app.use(cors());
 
 app.use(express.json());
 app.use(niveis)
+app.use(email)
 app.use(usuario)
 app.use(topico)
 app.use(comida)
