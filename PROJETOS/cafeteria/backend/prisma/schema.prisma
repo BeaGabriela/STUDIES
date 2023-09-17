@@ -24,7 +24,8 @@ model Usuario {
   nivel Int
   pedido Pedidos[]
 
-   confirmed Boolean  @default(false)
+  enviado Boolean @default(false)
+  confirmed Boolean  @default(false)
   niveis nivel @relation(fields: [nivel], references: [id])
 }
 
