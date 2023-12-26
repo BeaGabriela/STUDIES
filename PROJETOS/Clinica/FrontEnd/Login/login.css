@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: blue;
+}
+
+main{
+    width:40vw;
+    background-color:#fff;
+    height:70vh;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:12vh;
+    align-items:center;
+}
+
+#ImagemPrincipalCliica{
+    height:30vh;
+    width:20vw;
+    background-color:#000;
+    border-radius:50%;
+    
+}
+
