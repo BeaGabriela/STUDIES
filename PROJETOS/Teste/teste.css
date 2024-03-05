@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-direction:center;
+    align-items: center;
+    justify-content:center;
+    margin-top: 1vh;
+    background-color:#5cbb9b;
+}
+
+
+.fundo{
+    background-image: url('fundo.gif');
+    height: 98vh;
+    width:50vw;  
+    background-size: cover; /* Preencher toda a tela */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+    
+nav{
+    height: 40vh;
+    width:30vw;
+    background-color: #34ce9a86;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px 3px #34ce9bc7;
+}
+
+/* Usado para o 'Vamos começar' */
+nav > div > p{
+    font-weight:700;
+    font-size: 18pt;
+    color: #000;
+    text-align:center;
+    margin-top:3vh;
+}
+
+/* Usado para setar a div do sim e nao */
+nav > div > div {
+    display:flex;
+    flex-direction: column;
+    margin-top:2vh;
+}
+
+/* Usado para o 'Sim' e 'Não' */
+nav > div > div > p{
+    font-weight:500;
+    font-size: 14pt;
+    color: #000;
+    text-align:center;
+    margin-top:6vh;
+    margin-bottom:2vh;
+    cursor:pointer;
+}
+
+#escolher{
+    position:absolute;
+    top:43vh;
+    left:43vw;
+    height: 8vh;
+}
