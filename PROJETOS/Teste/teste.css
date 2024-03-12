@@ -10,7 +10,14 @@ body{
     justify-content:center;
     margin-top: 1vh;
     background-color:#5cbb9b;
+
+
+    /* Criando a questão dos vagalumes oscilando no fundo...tentativa */
+    background-image: url('vagalumes.gif');
+    
 }
+
+  
 
 
 .fundo{
@@ -23,6 +30,9 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #cce92a;
     
 }
 
@@ -62,9 +72,21 @@ nav > div > div > p{
     cursor:pointer;
 }
 
-#escolher{
+.escolher{
     position:absolute;
     top:43vh;
     left:43vw;
     height: 8vh;
 }
+
+
+
+@keyframes voar {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(800px, -140px);
+    }
+}
+

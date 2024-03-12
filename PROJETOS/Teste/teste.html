@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="teste.css">
 </head>
 
-<body>
+<body onload='carregar()'>
     <main class="fundo">
-    <nav>
-       <div>
-        <p >Vamos começar?</p>
-        <img id='escolher' src="./witch.png">
-        <div>
-            <p>Sim</p>
-            <p>Não</p>
-        </div>
-       </div>
-    </nav>
-</main>
+        <nav>
+            <div>
+                <p>Vamos começar?</p>
+                <img class='escolher' src="./witch.png">
+                <div>
+                    <p onclick="clicandoSim()">Sim</p>
+                    <p onclick="clicandoNao()">Não</p>
+                </div>
+            </div>
+        </nav>
+    </main>
 </body>
-
+<script src='./teste.js'></script>
 </html>
