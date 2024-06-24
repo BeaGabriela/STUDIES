@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(148, 38%, 91%);
+    /* font-size: 16px; */
+    font-family: [Karla]('https://fonts.google.com/specimen/Karla');
+    /* font-weight: 400; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+main{
+    height: 80vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 10vh;
+    text-align: center;
+}
+
+h1{
+    text-align: left;
+    margin: 15px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+div > nav > input{
+    height: 5vh;
+    width: 17vw;
+    margin-top: 1vh;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+h3{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.email > h3{
+    margin-right: 31vw;
+    margin-top:2vh;
+}
+.email > input{
+    height: 5vh;
+    width: 36vw;
+    margin-top: 1vh;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.QueryType{
+    display: flex;
+    flex-direction: column;
+}
+
+.QueryType > h3{
+    margin-right: 31vw;
+    margin-top:2vh;
+}
+
+#InputRadio{
+    display: flex;
+    justify-content: space-between;
+        
+}
+
+#InputRadio div{
+    width: 17vw;
+    border: 1px solid #000;
+    height: 5vh;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.mensagem{
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    margin-top:2vh;
+    margin-left: 2vw;
+}
+
+.mensagem input{
+    width: 36vw;
+    height: 17vh;
+}
+    
+.termos > nav{
+    display: flex; 
+    width:35vw;
+    margin-top: 2vh; 
+    border: 1px solid #000;
+}
+
+.termos > nav > input{
+    height: 2vh    ;
+}
+
+.termos > nav> h3{
+    margin-right:10vw;
+}
+
+
