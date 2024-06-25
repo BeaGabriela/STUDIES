@@ -29,7 +29,7 @@ h1{
     margin: 15px;
 }
 
-div{
+.nome, div{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -37,7 +37,7 @@ div{
     
 }
 
-div > nav > input{
+.nome > nav>  input{
     height: 5vh;
     width: 17vw;
     margin-top: 1vh;
@@ -109,17 +109,20 @@ h3{
     
 .termos > nav{
     display: flex; 
-    width:35vw;
-    margin-top: 2vh; 
-    border: 1px solid #000;
+    width:36vw;
+    margin-top: 3vh; 
+    /* border: 1px solid #000; */
 }
 
 .termos > nav > input{
-    height: 2vh    ;
+    height: 2vh;
+    /* top;left;bottom;right */
+    margin: 3px 1vw 0 0vw;
 }
 
-.termos > nav> h3{
-    margin-right:10vw;
+.termos > nav> p{
+    margin-right:12vw;
+    
 }
 
 
