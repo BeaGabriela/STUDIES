@@ -4,40 +4,41 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color:hsl(148, 38%, 91%);
+body {
+    background-color: hsl(148, 38%, 91%);
     /* font-size: 16px; */
     font-family: [Karla]('https://fonts.google.com/specimen/Karla');
     /* font-weight: 400; */
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;   
-}
-
-main{
-    height: 80vh;
-    width: 40vw;
-    border-radius: 20px;
-    background-color: hsl(0, 0%, 100%);
-    margin-top: 10vh;
     text-align: center;
 }
 
-h1{
+main {
+    height: 85vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 8vh;
+    text-align: center;
+}
+
+h1 {
     text-align: left;
     margin: 15px;
 }
 
-.nome, div{
+.nome,
+div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
 
-.nome > nav>  input{
+.nome>nav>input {
     height: 5vh;
     width: 17vw;
     margin-top: 1vh;
@@ -45,23 +46,25 @@ h1{
     border-color: gray;
 }
 
-h3{
+h3 {
     text-align: left;
     font-size: 12px;
     font-weight: 400;
 
 }
-.email{
+
+.email {
     display: flex;
     flex-direction: column;
-    margin:10px;
+    margin: 10px;
 }
 
-.email > h3{
+.email>h3 {
     margin-right: 31vw;
-    margin-top:2vh;
+    margin-top: 2vh;
 }
-.email > input{
+
+.email>input {
     height: 5vh;
     width: 36vw;
     margin-top: 1vh;
@@ -69,23 +72,23 @@ h3{
     border-color: gray;
 }
 
-.QueryType{
+.QueryType {
     display: flex;
     flex-direction: column;
 }
 
-.QueryType > h3{
+.QueryType>h3 {
     margin-right: 31vw;
-    margin-top:2vh;
+    margin-top: 2vh;
 }
 
-#InputRadio{
+#InputRadio {
     display: flex;
     justify-content: space-between;
-        
+
 }
 
-#InputRadio div{
+#InputRadio div {
     width: 17vw;
     border: 1px solid #000;
     height: 5vh;
@@ -94,35 +97,87 @@ h3{
     border-color: gray;
 }
 
-.mensagem{
+.mensagem {
     height: 20vh;
     width: 20vw;
     display: flex;
-    margin-top:2vh;
+    margin-top: 2vh;
     margin-left: 2vw;
 }
 
-.mensagem input{
+.mensagem input {
     width: 36vw;
-    height: 17vh;
-}
-    
-.termos > nav{
-    display: flex; 
-    width:36vw;
-    margin-top: 3vh; 
-    /* border: 1px solid #000; */
+    height: 15vh;
+    border-radius: 8px;
+    margin-top: 1vh;
 }
 
-.termos > nav > input{
+.termos>nav {
+    display: flex;
+    width: 36vw;
+    margin-top: 3vh;
+}
+
+.termos>nav>input {
     height: 2vh;
     /* top;left;bottom;right */
-    margin: 3px 1vw 0 0vw;
+    margin: 3px 2vw 1vh 0.2vw;
 }
 
-.termos > nav> p{
-    margin-right:12vw;
-    
+.termos>nav>p {
+    margin-right: 12vw;
+}
+
+button {
+    width: 36vw;
+    height: 6vh;
+    border: none;
+    border-radius: 6px;
+    background-color: hsl(169, 82%, 27%);
+    margin-top: 2vh;
+    color: #fff;
+    font-weight: 400;
 }
 
 
+/* Definindo o mesmo design para mobile */
+@media(max-width: 375px) {
+
+    /* Definido  a parte branca */
+    main {
+        width: 95vw;
+        height: 95vh;
+        margin-top: 2.5vh;
+    }
+
+    /* Definidindo a div dos inout dos nomes */
+    .nome,
+    div, #InputRadio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    /* Definindo os inputs */
+    .nome>nav>input,
+    .email>input,
+    #InputRadio div {
+        height: 6vh;
+        width: 80vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 5px;
+        border-color: gray;
+    }
+
+    .email>h3, .QueryType>h3 {
+        margin-right: 60vw;
+        margin-top: 2vh;
+    }
+
+
+
+
+}
