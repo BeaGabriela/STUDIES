@@ -146,13 +146,16 @@ button {
     /* Definido  a parte branca */
     main {
         width: 95vw;
-        height: 95vh;
+        height: 92%;
         margin-top: 2.5vh;
     }
 
     /* Definidindo a div dos inout dos nomes */
     .nome,
-    div, #InputRadio {
+    div,
+    #InputRadio,
+    .QueryType > h3,
+    .mensagem > h3 {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -172,10 +175,46 @@ button {
         border-color: gray;
     }
 
-    .email>h3, .QueryType>h3 {
+
+    /* Ajustabndo o input radio e a descrição de cada input */
+    #InputRadio>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Definindo a estrutura correta do emaul e do input radio */
+    .email>h3,
+    .QueryType>h3 {
         margin-right: 60vw;
         margin-top: 2vh;
     }
+
+    /* Definir o campo mensagem para o devido enquadramento */
+    .mensagem {
+        margin-left: 37vw;
+    }
+
+    /* Definindo a largura do inout */
+    .mensagem input {
+        width: 80vw;
+    }
+
+    /* Definindo e ajustando o campo de assinalar o termo de concordancia */
+    .termos nav{
+        width:85vw;
+        margin-left:6vw;
+    }
+
+    button{
+        width:80vw;
+        margin-bottom:2vh;
+    }
+
+    
+
+
+
+
 
 
 
