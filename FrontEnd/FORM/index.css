@@ -41,7 +41,7 @@ div {
 .nome>nav>input {
     height: 5vh;
     width: 17vw;
-    margin-top: 1vh;
+    margin-top: 3vh;
     border-radius: 5px;
     border-color: gray;
 }
@@ -60,7 +60,7 @@ h3 {
 }
 
 .email>h3 {
-    margin-right: 31vw;
+    margin-right: 28.2vw;
     margin-top: 2vh;
 }
 
@@ -209,14 +209,30 @@ button {
         width:80vw;
         margin-bottom:2vh;
     }
-
-    
-
+}
 
 
+/* Criando o modal para esconder os modais */
+.model{
+    display:none;
+    visibility: hidden;
+}
 
 
+/* Criando a forma e o lugar onde a mensagem de erro vai ficar */
+.requiredNome,
+.requiredNomeUltimo{
+    font-size: 12px;
+    margin-top:1vh;
+    text-align: left;
+    color:red;
 
+}
 
-
+/* Criando o modal do erro do email */
+.requiredEmail{
+    font-size: 12px;
+    margin-top:1vh;
+    margin-right: 26vw;
+    color:red;
 }

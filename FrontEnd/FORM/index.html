@@ -22,18 +22,21 @@
     <div class="nome">
       <nav>
         <h3>First Name: *</h3>
-        <input id="primeiroNome" type="text"/>
+        <input id="primeiroNome" type="text" required/>
+        <p class="requiredNome model">This field is required</p>
       </nav>
       <nav>
         <h3>Last Name: *</h3>
-        <input id="ultimoNome" type="text" />
+        <input id="ultimoNome" type="text" required onpause=""/>
+        <p class="requiredNomeUltimo model">This field is required</p>
       </nav>
     </div>
 
     <!-- Definindo a linha de email do formulario -->
     <div class="email">
       <h3>Email Adress: *</h3>
-      <input type="text">
+      <input id="email" type="email" required/>
+      <p class="requiredEmail model">This field is required</p>
     </div>
 
     <!-- Definindo a linha de Qyery Type dp formulario -->
@@ -70,7 +73,7 @@
 
 
 
-  <!-- This field is required
+  <!-- 
 
   Last Name
   This field is required
