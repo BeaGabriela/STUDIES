@@ -221,7 +221,8 @@ button {
 
 /* Criando a forma e o lugar onde a mensagem de erro vai ficar */
 .requiredNome,
-.requiredNomeUltimo{
+.requiredNomeUltimo,
+.requiredInput{
     font-size: 12px;
     margin-top:1vh;
     text-align: left;
@@ -233,6 +234,6 @@ button {
 .requiredEmail{
     font-size: 12px;
     margin-top:1vh;
-    margin-right: 26vw;
+    margin-right: 28vw;
     color:red;
 }
