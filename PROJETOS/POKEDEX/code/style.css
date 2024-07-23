@@ -1,0 +1,84 @@
+/* Removendo medidas caso haja */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilizando a main */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilizando a imagem pricipal */
+img {
+    height: 85vh;
+    width: 55vw;
+    margin-top: 10vh;
+
+}
+
+/* Estilizando a localização do ambiente e do pokemon */
+.ambiente {
+    position: absolute;
+    top: 6vh;
+    left: 49.6%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Definindo a altura e a largura do ambiente */
+.ambiente>img {
+    height: 28.8vh;
+    width: 18vw;
+}
+
+/* Estilizando a localização do pokemon */
+.pokemon {
+    position: absolute;
+    top: 6.2vh;
+    left: 49.6%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Estilizando o tamanho do pokemom */
+.pokemon>img {
+    height: 18vh;
+    width: auto;
+}
+
+/* Definindo as medidas e o local das caracxteristicas */
+nav {
+    position: absolute;
+    top: 51vh;
+    right: 5%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Proporções da imagem de caracteristicas */
+nav img {
+    height: 5vh;
+    width: auto;
+}
+
+/* Definindo a localização das caracteristicas */
+nav p {
+    margin-top: 2vh;
+    margin-right: 1vw;
+}
+
+/* É necessario você definir a parte clicavel da div de seta de avanço em conjunto com a imgame de avanço */
+
+.setaAvanco img {
+    height: 3vh;
+    width: auto;
+}

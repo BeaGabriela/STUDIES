@@ -1,0 +1,4 @@
+Pokedex anotações:
+	HTML:
+		Criar o arquivo um HTML visando as tags necessárias para o chamado do FETCH
+		
