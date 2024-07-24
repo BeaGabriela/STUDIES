@@ -55,26 +55,48 @@ img {
 /* Definindo as medidas e o local das caracxteristicas */
 nav {
     position: absolute;
-    top: 51vh;
-    right: 5%;
+    top: 60%;
+    right: 41.4%;
     width: 100%;
     /* background-color: rgba(0, 0, 0, 0.8); */
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 30vh;
+    width: 18vw;
+}
+
+.pesquisa{
+    display: flex;    
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.pesquisa input {
+    width: 85%;
+    height:4vh;
+    border-radius: 8px;
+    margin-top: 1.0vh;
+}
+
+.pesquisa button{
+    background: none;
+    border:none;
+    padding-top: 1.3vh;
 }
 
 /* Proporções da imagem de caracteristicas */
-nav img {
+/* nav img {
     height: 5vh;
     width: auto;
-}
+} */
 
 /* Definindo a localização das caracteristicas */
-nav p {
+/* nav p {
     margin-top: 2vh;
     margin-right: 1vw;
-}
+} */
+
 
 /* É necessario você definir a parte clicavel da div de seta de avanço em conjunto com a imgame de avanço */
 
