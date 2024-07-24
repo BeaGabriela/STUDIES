@@ -21,7 +21,7 @@
             <img src="../assets/ambiente.jpg" alt="">
             <!-- Defininfo as medidas e a localização do pokemon -->
             <div class="pokemon">
-                <img src="../assets/pokebola.png" />
+                <img src="../assets/pokebola.png" id="pokemonImagem" />
             </div>
         </div>
 
@@ -33,17 +33,37 @@
                     <input type="search" name="" id="">
                     <button type="button"><i class="large material-icons">search</i></button>
                 </div>
-                <!-- <img src="../assets/fogo.png" alt="">
-                <p>Caracteristicas</p> -->
+                <div class="caracteristicas">
+                    <div class="nomePokemon">
+                        <img src="../assets/fogo.png" alt="">
+                        <p id="nome">Nome</p>
+                    </div>
+                    <p>Caracteristicas fisicas incluem poderes que podem ser usado de acordo com a fraqueza do proximo
+                        pokemon</p>
+                </div>
             </div>
         </nav>
 
-        <!-- Definido a localização das setas de avanço
+        <!-- Definido a localização das setas de avanço -->
         <div class="setaAvanco">
-            <img src="../assets/direita.png" alt="">
-        </div> -->
+            <i class="large material-icons">arrow_forward</i>
+        </div>
+
+
+        <!-- Definido a localização das setas de recuo -->
+        <div class="setaRecuo">
+            <i class="large material-icons">arrow_back</i>
+        </div>
+
+        <!-- Definir o numero do pokemon -->
+         <div id="Npokemon">
+            <h1 id="numeroPokemon">02</h1>
+         </div>
 
     </main>
+
+    <!-- Definindo o Script -->
+    <script src="./scrip.js"></script>
 </body>
 
 </html>

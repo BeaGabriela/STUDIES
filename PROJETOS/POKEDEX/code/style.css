@@ -66,41 +66,87 @@ nav {
     width: 18vw;
 }
 
-.pesquisa{
-    display: flex;    
+/* Ajeitando po layout onde vai ficar o input de .pesquisa */
+.pesquisa {
+    display: flex;
     justify-content: space-between;
     margin-top: 2vh;
 }
 
+/* Ajeitando o input de .pesquisa */
 .pesquisa input {
     width: 85%;
-    height:4vh;
+    height: 4vh;
     border-radius: 8px;
     margin-top: 1.0vh;
 }
 
-.pesquisa button{
+/* Ajeitando o botão de pesquisa */
+.pesquisa button {
     background: none;
-    border:none;
+    border: none;
     padding-top: 1.3vh;
 }
 
+.caracteristicas {
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+/* Incluindo uma tag p pra o nome */
+.nomePokemon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 6vw;
+}
+
+/* Arrumando a tag do nome */
+.nomePokemon p {
+    margin-top: 12vh;;
+    margin-left: 3vw;
+}
+
 /* Proporções da imagem de caracteristicas */
-/* nav img {
+nav img {
     height: 5vh;
     width: auto;
-} */
+}
 
 /* Definindo a localização das caracteristicas */
-/* nav p {
-    margin-top: 2vh;
+nav p {
+    margin-top: 0.5vh;
     margin-right: 1vw;
-} */
+}
 
 
 /* É necessario você definir a parte clicavel da div de seta de avanço em conjunto com a imgame de avanço */
+.setaAvanco {
+    background-color: rgb(194, 75, 6); 
+    height: 3.5vh;
+    width:2.4vw;
+    position: absolute;
+    top: 72%;
+    left: 35.7%;
+    text-align: center;
+}
 
-.setaAvanco img {
-    height: 3vh;
-    width: auto;
+/* É necessario você definir a parte clicavel da div de seta de recuo em conjunto com a imgame de recuo*/
+.setaRecuo {
+    background-color: rgb(194, 75, 6);  
+    height: 3.5vh;
+    width:2.4vw;
+    position: absolute;
+    top: 72%;
+    left: 31.6%;
+    text-align: center;
+}
+
+
+/* Criando uma variavel e estlizando para agregar o numero */
+#Npokemon{
+    position: absolute;
+    top:71.4%;
+    left:68.7%;
 }
