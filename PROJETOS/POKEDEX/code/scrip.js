@@ -1,11 +1,23 @@
 // Criando uma variavel para chamar a imagem dopokemon do html
-const imagemPokemon = document.querySelector('#pokemonImagem')
+const imagemPokemon = document.querySelector('#pokemonImagem');
 
 // Criando uma variavel para chamar o nome do pokemon do html
-const nomePokemon = document.querySelector('#nome')
+const nomePokemon = document.querySelector('#nome');
 
 // Criando uma variavel para chamar o numero do pokemon do html
-const numeroPokemon = document.querySelector('#numeroPokemon')
+const numeroPokemon = document.querySelector('#numeroPokemon');
+
+// Criando um botão para chamar a função para buscar o proximo pokemon
+const btnSetaAvanco = document.querySelector('.setaAvanco');
+
+// Criando um botão para chamar a função para buscar o pokemon anterior
+const btnSetaRecuo = document.querySelector('.setaRecuo');
+
+//Chamando o input para qye seja ossivel resgatar seuy valor e utilizar para uma busca na lista de pokemons
+const inputPesquisa = document.querySelector('#inputPesquisaPokemon');
+
+//Chamndo o botão que dará gatilho para iniciar a busca na lista
+const btnBusca = document.querySelector('#buscarPokemon');
 
 // Criando uma variavel com o valor definindo como 1
 let NumeroIdpokemon = 1;
@@ -54,5 +66,29 @@ const direcionandoPokemon = async (PokemonId) => {
 
 
 }
+
+//Criando uma função que busca o pokemon de acordo com o nome colocado no input
+btnBusca.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    direcionandoPokemon(inputPesquisa.value.toLowerCase())
+})
+
+
+//Criando a função de acrescentar um numero no id do pokemon e ir para o proximo
+btnSetaAvanco.addEventListener('click', () => {
+    NumeroIdpokemon += 1;
+    direcionandoPokemon(NumeroIdpokemon)
+});
+
+//Criando a função de diminuir um numero no id do pokemon e ir para o anterior
+btnSetaRecuo.addEventListener('click', () => {
+    if (NumeroIdpokemon > 1) {
+        NumeroIdpokemon -= 1;
+    }
+    direcionandoPokemon(NumeroIdpokemon)
+});
+
+
 
 direcionandoPokemon(NumeroIdpokemon)

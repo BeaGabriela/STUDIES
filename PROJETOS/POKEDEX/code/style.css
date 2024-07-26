@@ -130,6 +130,7 @@ nav p {
     top: 72%;
     left: 35.7%;
     text-align: center;
+    cursor: pointer;
 }
 
 /* É necessario você definir a parte clicavel da div de seta de recuo em conjunto com a imgame de recuo*/
@@ -141,6 +142,7 @@ nav p {
     top: 72%;
     left: 31.6%;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -148,5 +150,5 @@ nav p {
 #Npokemon{
     position: absolute;
     top:71.4%;
-    left:68.7%;
+    left:69%;
 }
