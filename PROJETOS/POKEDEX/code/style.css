@@ -67,25 +67,30 @@ nav {
 }
 
 /* Ajeitando po layout onde vai ficar o input de .pesquisa */
-.pesquisa {
+/* .pesquisa {
     display: flex;
     justify-content: space-between;
     margin-top: 2vh;
-}
+} */
 
 /* Ajeitando o input de .pesquisa */
-.pesquisa input {
-    width: 85%;
+/*.pesquisa input {
+    /* position:absolute; */
+    /* width: 85%;
     height: 4vh;
     border-radius: 8px;
     margin-top: 1.0vh;
-}
+} */
 
 /* Ajeitando o botão de pesquisa */
 .pesquisa button {
     background: none;
     border: none;
-    padding-top: 1.3vh;
+    padding-top: 1.3vh; 
+    position: absolute;
+    top:66vh;
+    left:33.8vw;
+    background-color: aliceblue;
 }
 
 .caracteristicas {
@@ -104,9 +109,17 @@ nav {
 
 /* Arrumando a tag do nome */
 .nomePokemon p {
-    margin-top: 12vh;;
+    margin-top: 5vh;
+    font-size: 16pt;
+    font-weight: 600;
     margin-left: 3vw;
 }
+
+/* Acrescebtando uma margin op na imgame para enquadrar com o nome */
+.nomePokemon img{
+    margin-top: 3.5vh;
+}
+
 
 /* Proporções da imagem de caracteristicas */
 nav img {
@@ -116,7 +129,7 @@ nav img {
 
 /* Definindo a localização das caracteristicas */
 nav p {
-    margin-top: 0.5vh;
+    margin-top: 4vh;
     margin-right: 1vw;
 }
 
