@@ -33,7 +33,8 @@
                         <img src="../assets/fogo.png" alt="">
                         <p id="nome">Nome</p>
                     </div>
-                    <p id="habilidades">Caracteristicas fisicas incluem poderes que podem ser usado de acordo com a fraqueza do proximo
+                    <p id="habilidades">Caracteristicas fisicas incluem poderes que podem ser usado de acordo com a
+                        fraqueza do proximo
                         pokemon</p>
                 </div>
             </div>
@@ -57,11 +58,25 @@
 
         <!-- Dfinindo um input para pesquisa de pokemons -->
         <div class="pesquisa">
-            <!-- <input type="text" name="" id="inputPesquisaPokemon"> -->
-            <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button>
+            <button type="button" id="abrirModalPesquisar"><i class="large material-icons">search</i></button>
         </div>
 
     </main>
+
+    <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
+    <nav class='telaPesquisa '>
+        <div class="divCentralPesquisa">
+            <div>
+                <img src="../assets/ambiente.jpg" id="ambienteModalPesquisa"/>
+                <img src="../assets/pokebola.png" id="imagemPokemonPesquisa" />
+            </div>
+            <nav>
+                <input type="text" name="" id="inputPesquisaPokemon">
+                <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button>
+            </nav>
+        </div>
+
+    </nav>
 
     <!-- Definindo o Script -->
     <script src="./scrip.js"></script>

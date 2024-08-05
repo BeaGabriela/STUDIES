@@ -76,7 +76,7 @@ nav {
 /* Ajeitando o input de .pesquisa */
 /*.pesquisa input {
     /* position:absolute; */
-    /* width: 85%;
+/* width: 85%;
     height: 4vh;
     border-radius: 8px;
     margin-top: 1.0vh;
@@ -86,10 +86,10 @@ nav {
 .pesquisa button {
     background: none;
     border: none;
-    padding-top: 1.3vh; 
+    padding-top: 1.3vh;
     position: absolute;
-    top:66vh;
-    left:33.8vw;
+    top: 66vh;
+    left: 33.8vw;
     background-color: aliceblue;
 }
 
@@ -100,7 +100,7 @@ nav {
 }
 
 /* Incluindo uma tag p pra o nome */
-.nomePokemon{
+.nomePokemon {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -116,7 +116,7 @@ nav {
 }
 
 /* Acrescebtando uma margin op na imgame para enquadrar com o nome */
-.nomePokemon img{
+.nomePokemon img {
     margin-top: 3.5vh;
 }
 
@@ -136,9 +136,9 @@ nav p {
 
 /* É necessario você definir a parte clicavel da div de seta de avanço em conjunto com a imgame de avanço */
 .setaAvanco {
-    background-color: rgb(194, 75, 6); 
+    background-color: rgb(194, 75, 6);
     height: 3.5vh;
-    width:2.4vw;
+    width: 2.4vw;
     position: absolute;
     top: 72%;
     left: 35.7%;
@@ -148,9 +148,9 @@ nav p {
 
 /* É necessario você definir a parte clicavel da div de seta de recuo em conjunto com a imgame de recuo*/
 .setaRecuo {
-    background-color: rgb(194, 75, 6);  
+    background-color: rgb(194, 75, 6);
     height: 3.5vh;
-    width:2.4vw;
+    width: 2.4vw;
     position: absolute;
     top: 72%;
     left: 31.6%;
@@ -160,8 +160,62 @@ nav p {
 
 
 /* Criando uma variavel e estlizando para agregar o numero */
-#Npokemon{
+#Npokemon {
     position: absolute;
-    top:71.4%;
-    left:69%;
+    top: 71.4%;
+    left: 69%;
+}
+
+/* Estilizando o modelo de pesquisa */
+.telaPesquisa {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+}
+
+/* Estilizando a div que vai armazenar o imput e a imnagem */
+.divCentralPesquisa {
+    height: 65vh;
+    width: 50vw;
+    background-color: #fff;
+    margin-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* definindo uma borda para a imagem */
+.divCentralPesquisa div {
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid #000;
+}
+
+/* Definidno o enquadrmaneto do ambiente */
+#ambienteModalPesquisa {
+    height: 30vh;
+    width: 30vw;
+    margin-top: 0;
+}
+
+/* Definindo a imagem do pokemon no modal de pesquisa */
+#imagemPokemonPesquisa {
+    position: absolute;
+    top: 15vh;
+    left:45vw;
+    height: 18vh;
+    width: 10vw;
+}
+
+.divCentralPesquisa nav{
+    width:30vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#inputPesquisaPokemon{
+    width: 20vw;
 }
