@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <!-- Definindo a localização da pokedex -->
+    <!-- Definindo a localização da pokedex  na tela-->
     <main>
-
+        <!-- Imagem da pokedex -->
         <img src="../assets/pokedex.png" />
-        <!-- Definindo a localização e a cemtralização do ambiente do pokemon -->
+        <!-- Definindo a localização e a cemtralização do ambiente fundo do pokemon -->
         <div class="ambiente">
             <img src="../assets/ambiente.jpg" alt="">
             <!-- Defininfo as medidas e a localização do pokemon -->
@@ -40,13 +40,12 @@
             </div>
         </nav>
 
-        <!-- Definido a localização das setas de avanço -->
+         <!-- Definido a localização das setas de avanço -->
         <div class="setaAvanco">
             <i class="large material-icons">arrow_forward</i>
         </div>
 
-
-        <!-- Definido a localização das setas de recuo -->
+         <!-- Definido a localização das setas de recuo -->
         <div class="setaRecuo">
             <i class="large material-icons">arrow_back</i>
         </div>
@@ -61,22 +60,21 @@
             <button type="button" id="abrirModalPesquisar"><i class="large material-icons">search</i></button>
         </div>
 
-    </main>
-
-    <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
-    <nav class='telaPesquisa '>
-        <div class="divCentralPesquisa">
-            <div>
-                <img src="../assets/ambiente.jpg" id="ambienteModalPesquisa"/>
-                <img src="../assets/pokebola.png" id="imagemPokemonPesquisa" />
-            </div>
-            <nav>
+       <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
+    <nav class='telaPesquisa  '>
+       <div class="divCentralPesquisa">
+        <p id="fecharmodalPesquisa">x</p>
+           <nav> 
                 <input type="text" name="" id="inputPesquisaPokemon">
-                <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button>
-            </nav>
-        </div>
+                <ul class='resultados'></ul>
+                <!-- <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button> -->
+            </nav> 
+        </div> 
 
     </nav>
+
+
+    </main>
 
     <!-- Definindo o Script -->
     <script src="./scrip.js"></script>

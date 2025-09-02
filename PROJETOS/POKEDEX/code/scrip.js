@@ -23,6 +23,19 @@ const btnBusca = document.querySelector('#buscarPokemon');
 let NumeroIdpokemon = 1;
 
 
+
+
+// Traduzir habilidades para português
+const traducaoHabilidades = {
+    overgrow: "Super Crescimento",
+    chlorophyll: "Clorofila",
+    blaze: "Chama",
+    solar_power: "Poder Solar",
+    torrent: "Torvelinho",
+    // adicione mais conforme precisar
+};
+
+
 // Criar uma funcão assicrona para chamar a API do pokemon
 const fetchPokemon = async (pokemon) => {
     // Criar uma constante com o valor definido como a api
@@ -49,7 +62,7 @@ const direcionandoPokemon = async (PokemonId) => {
         // Direcionando a imagem do pokemon para usar display block
         imagemPokemon.style.display = 'block';
         //Definindo o nome do pokemon baseado no json
-        nomePokemon.innerHTML = data.name;
+        nomePokemon.innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1);;
         //Definindo o id do pokemon
         numeroPokemon.innerHTML = data.id;
         // Defininfo que avariavel declarada na parte superior. agora tem o valor do id
@@ -63,7 +76,8 @@ const direcionandoPokemon = async (PokemonId) => {
         if (data.abilities.length > 0) {
             data.abilities.forEach((item) => {
                 const habilidadeItem = document.createElement('p');
-                habilidadeItem.textContent = `Habilidade: ${item.ability.name}`;
+                const nomeHabilidade = traducaoHabilidades[item.ability.name] || item.ability.name;
+                habilidadeItem.textContent = `Habilidade: ${nomeHabilidade}`;
                 habilidades.appendChild(habilidadeItem);
             });
         } else {
@@ -93,6 +107,60 @@ btnSetaRecuo.addEventListener('click', () => {
     direcionandoPokemon(NumeroIdpokemon)
 });
 
+
+//Modal de pesquisa
+const modalPesquisa = document.querySelector('.telaPesquisa');
+//Terminar
+const btnAbrirModal = document.querySelector('#abrirModalPesquisar');
+
+btnAbrirModal.addEventListener('click', () => {
+    modalPesquisa.style.display = 'block';
+});
+
+modalPesquisa.querySelector('p').addEventListener('click', () => {
+    modalPesquisa.style.display = 'none';
+});
+
+let listaPokemons = [];
+
+async function carregarPokemon(){
+    const resp = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+    const data = await resp.json()
+    listaPokemons =data.results.map(p => p.name)
+}
+
+carregarPokemon()
+
+const input = document.querySelector("#inputPesquisaPokemon")
+const resultados = document.querySelector(".resultados")
+
+input.addEventListener("input", () =>{
+    const valor = input.value.toLowerCase()
+    resultados.innerHTML = ""
+
+    if (valor.length > 0) {
+        const filtrados = listaPokemons.filter(nome => nome.includes(valor));
+        
+        filtrados.forEach(nome => {
+            const li = document.createElement("li");
+            li.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
+            li.style.padding= "10px"
+            li.style.fontWeight = '800'
+            li.style.boxShadow = '1px 1px  #000'
+            li.style.cursor = 'pointer'
+            li.onclick = () => {
+                input.value = nome;
+                resultados.innerHTML = "";
+                modalPesquisa.style.display = "none"; // FECHA o modal
+                 input.value = ''
+                 direcionandoPokemon(nome.toLowerCase()); // chama a função que já exibe o pokémon na pokédex
+            };
+            resultados.appendChild(li);
+           
+
+        });
+    }
+})
 
 
 direcionandoPokemon(NumeroIdpokemon)

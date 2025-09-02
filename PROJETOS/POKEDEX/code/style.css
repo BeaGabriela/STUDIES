@@ -12,6 +12,7 @@ main {
 }
 
 
+
 /* Estilizando a imagem pricipal */
 img {
     height: 85vh;
@@ -50,6 +51,7 @@ img {
 .pokemon>img {
     height: 18vh;
     width: auto;
+
 }
 
 /* Definindo as medidas e o local das caracxteristicas */
@@ -64,23 +66,9 @@ nav {
     align-items: center;
     height: 30vh;
     width: 18vw;
+
 }
 
-/* Ajeitando po layout onde vai ficar o input de .pesquisa */
-/* .pesquisa {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2vh;
-} */
-
-/* Ajeitando o input de .pesquisa */
-/*.pesquisa input {
-    /* position:absolute; */
-/* width: 85%;
-    height: 4vh;
-    border-radius: 8px;
-    margin-top: 1.0vh;
-} */
 
 /* Ajeitando o botão de pesquisa */
 .pesquisa button {
@@ -90,7 +78,14 @@ nav {
     position: absolute;
     top: 66vh;
     left: 33.8vw;
-    background-color: aliceblue;
+    background-color: #C24B06;
+    border-radius: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .caracteristicas {
@@ -105,14 +100,18 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     margin-right: 6vw;
+
 }
 
 /* Arrumando a tag do nome */
 .nomePokemon p {
     margin-top: 5vh;
-    font-size: 16pt;
-    font-weight: 600;
     margin-left: 3vw;
+    font-size: 18pt;
+    font-weight: 700;
+    margin-left: 0.5vw;
+    color: #333;
+    text-transform: capitalize;
 }
 
 /* Acrescebtando uma margin op na imgame para enquadrar com o nome */
@@ -158,6 +157,23 @@ nav p {
     cursor: pointer;
 }
 
+.setaAvanco,
+.setaRecuo {
+    background-color: #C24B06;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.setaAvanco:hover,
+.setaRecuo:hover {
+    transform: scale(1.2);
+}
+
 
 /* Criando uma variavel e estlizando para agregar o numero */
 #Npokemon {
@@ -166,56 +182,73 @@ nav p {
     left: 69%;
 }
 
-/* Estilizando o modelo de pesquisa */
+
+/* Editando o modal de pesquisa */
 .telaPesquisa {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: #000;
-    top: 0;
-    left: 0;
+    height: 30%;
+    width: 18%;
+    position: fixed;
+    top: 75%;
+    left: 674px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2em;
+    border-radius: 15px;
+    display: none;
+    /* só aparece quando clicar no botão */
+    z-index: 100;
 }
 
-/* Estilizando a div que vai armazenar o imput e a imnagem */
+/* Centralizando */
 .divCentralPesquisa {
-    height: 65vh;
-    width: 50vw;
-    background-color: #fff;
-    margin-top: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* definindo uma borda para a imagem */
-.divCentralPesquisa div {
-    height: 30vh;
-    width: 30vw;
-    border: 1px solid #000;
-}
-
-/* Definidno o enquadrmaneto do ambiente */
-#ambienteModalPesquisa {
-    height: 30vh;
-    width: 30vw;
-    margin-top: 0;
-}
-
-/* Definindo a imagem do pokemon no modal de pesquisa */
-#imagemPokemonPesquisa {
-    position: absolute;
-    top: 15vh;
-    left:45vw;
-    height: 18vh;
-    width: 10vw;
+    gap: 1em;
 }
 
 .divCentralPesquisa nav{
-    width:30vw;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
+    margin-top: -16vh;
 }
-#inputPesquisaPokemon{
-    width: 20vw;
+
+/* Mudando  o input de pesquisa */
+#inputPesquisaPokemon {
+    width: 200px;
+    padding: 0.5em;
+    border-radius: 8px;
+    border: none;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
+ /* Editando o  btn de pesquisa */
+#buscarPokemon {
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    background-color: #C24B06;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 16vw;
+    margin-top: 1vh;
+
+}
+
+ul{
+    color: #fff;
+    background-color: #585555;
+    margin-left: 15vw;
+    width: 200px;
+    height: 16vh;
+    overflow-y: scroll;
+    padding-top: 4px;
+    
+}
+
+#fecharmodalPesquisa{
+    color: #fff;
+    margin-top: -2vh;
+    margin-left: 12vw;
+    font-family: 18pt;
+    cursor:pointer;
+
 }
