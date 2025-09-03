@@ -14,7 +14,7 @@ main {
 
 
 /* Estilizando a imagem pricipal */
-img {
+#pokedex {
     height: 85vh;
     width: 55vw;
     margin-top: 10vh;
@@ -35,6 +35,7 @@ img {
 .ambiente>img {
     height: 28.8vh;
     width: 18vw;
+    margin-top: 10vh;
 }
 
 /* Estilizando a localização do pokemon */
@@ -50,6 +51,7 @@ img {
 /* Estilizando o tamanho do pokemom */
 .pokemon>img {
     height: 18vh;
+    margin-top: 10vh;
     width: auto;
 
 }
@@ -70,22 +72,53 @@ nav {
 }
 
 
+/* Acoes de pesquisa e abrir carta */
+.acoesLateral {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 52vw;
+}
+
+
 /* Ajeitando o botão de pesquisa */
 .pesquisa button {
     background: none;
     border: none;
-    padding-top: 1.3vh;
-    position: absolute;
-    top: 66vh;
-    left: 33.8vw;
-    background-color: #C24B06;
+    padding: 5px;
+    background-color: #413d3c;
     border-radius: 40%;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     transition: transform 0.2s;
+}
+
+
+/* Criando um hover para o botao de pesuisa */
+.pesquisa button:hover {
+    padding: 8px;
+    background-color: #000;
+}
+
+
+/* Definindo o icone de carta pokemon */
+#cartaPokemonAbrir {
+    height: 6vh;
+    width: 3vw;
+}
+
+/* Definindo o localdo botao de carta */
+#abrirCarta,
+#favoritos {
+    background: none;
+    border: none;
+    border-radius: 40%;
+    cursor:pointer;
+}
+
+#cartaPokemonAbrir:hover {
+   height: 8vh;
+   width: 4vw;
 }
 
 .caracteristicas {
@@ -105,14 +138,26 @@ nav {
 
 /* Arrumando a tag do nome */
 .nomePokemon p {
-    margin-top: 5vh;
+    margin-top: 2vh;
+    margin-bottom: -3vh;
     margin-left: 3vw;
-    font-size: 18pt;
-    font-weight: 700;
-    margin-left: 0.5vw;
+    font-size: 20pt;
+    font-weight: 900;
     color: #333;
     text-transform: capitalize;
+    transform: translate(2%, -20%);
+    border-radius: 15px;
+    /* só aparece quando clicar no botão */
+    z-index: 100;
 }
+
+/* Crinado um hover para  o nome do pokemon */
+.nomePokemon p:hover {
+    font-size: 22pt;
+    cursor: pointer;
+    color: #000;
+}
+
 
 /* Acrescebtando uma margin op na imgame para enquadrar com o nome */
 .nomePokemon img {
@@ -207,7 +252,7 @@ nav p {
     gap: 1em;
 }
 
-.divCentralPesquisa nav{
+.divCentralPesquisa nav {
     margin-top: -16vh;
 }
 
@@ -220,7 +265,8 @@ nav p {
     margin-left: 15vw;
     margin-top: 5vh;
 }
- /* Editando o  btn de pesquisa */
+
+/* Editando o  btn de pesquisa */
 #buscarPokemon {
     padding: 0.5em 1em;
     border-radius: 8px;
@@ -233,7 +279,7 @@ nav p {
 
 }
 
-ul{
+ul {
     color: #fff;
     background-color: #585555;
     margin-left: 15vw;
@@ -241,14 +287,14 @@ ul{
     height: 16vh;
     overflow-y: scroll;
     padding-top: 4px;
-    
+
 }
 
-#fecharmodalPesquisa{
+#fecharmodalPesquisa {
     color: #fff;
     margin-top: -2vh;
     margin-left: 12vw;
     font-family: 18pt;
-    cursor:pointer;
+    cursor: pointer;
 
 }

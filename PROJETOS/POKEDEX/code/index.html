@@ -15,7 +15,7 @@
     <!-- Definindo a localização da pokedex  na tela-->
     <main>
         <!-- Imagem da pokedex -->
-        <img src="../assets/pokedex.png" />
+        <img id="pokedex" src="../assets/pokedex.png" />
         <!-- Definindo a localização e a cemtralização do ambiente fundo do pokemon -->
         <div class="ambiente">
             <img src="../assets/ambiente.jpg" alt="">
@@ -30,7 +30,7 @@
             <div>
                 <div class="caracteristicas">
                     <div class="nomePokemon">
-                        <img src="../assets/fogo.png" alt="">
+                        <!-- <img src="../assets/fogo.png" alt=""> -->
                         <p id="nome">Nome</p>
                     </div>
                     <p id="habilidades">Caracteristicas fisicas incluem poderes que podem ser usado de acordo com a
@@ -40,12 +40,12 @@
             </div>
         </nav>
 
-         <!-- Definido a localização das setas de avanço -->
+        <!-- Definido a localização das setas de avanço -->
         <div class="setaAvanco">
             <i class="large material-icons">arrow_forward</i>
         </div>
 
-         <!-- Definido a localização das setas de recuo -->
+        <!-- Definido a localização das setas de recuo -->
         <div class="setaRecuo">
             <i class="large material-icons">arrow_back</i>
         </div>
@@ -55,26 +55,47 @@
             <h1 id="numeroPokemon">02</h1>
         </div>
 
-        <!-- Dfinindo um input para pesquisa de pokemons -->
-        <div class="pesquisa">
-            <button type="button" id="abrirModalPesquisar"><i class="large material-icons">search</i></button>
-        </div>
 
-       <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
-    <nav class='telaPesquisa  '>
-       <div class="divCentralPesquisa">
-        <p id="fecharmodalPesquisa">x</p>
-           <nav> 
-                <input type="text" name="" id="inputPesquisaPokemon">
-                <ul class='resultados'></ul>
-                <!-- <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button> -->
-            </nav> 
-        </div> 
+        <nav class="acoesLateral">
+            <!-- Dfinindo um input para pesquisa de pokemons -->
+            <div class="pesquisa">
+                <button type="button" id="abrirModalPesquisar"><i class="material-icons large">search</i></button>
+            </div>
+
+            <!-- Definindo um botão de card -->
+            <div class="carta">
+                <button type="button" id="abrirCarta">
+                    <img src='../assets/game.png' id="cartaPokemonAbrir">
+                </button>
+            </div>
+
+            <!-- Definindo um botão de favoritar -->
+            <div class="favorito">
+                <button type="button" id="favoritos">
+                    <img src='../assets/fogo.png' id="favoritar">
+                </button>
+            </div>
+        </nav>
+
+
+
+        <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
+        <nav class='telaPesquisa  '>
+            <div class="divCentralPesquisa">
+                <p id="fecharmodalPesquisa">x</p>
+                <nav>
+                    <input type="text" name="" id="inputPesquisaPokemon">
+                    <ul class='resultados'></ul>
+                    <!-- <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button> -->
+                </nav>
+            </div>
+        </nav>
+    </main>
+
+    <!-- //Criando o cardpara monstra o pokeomn -->
+    <nav>
 
     </nav>
-
-
-    </main>
 
     <!-- Definindo o Script -->
     <script src="./scrip.js"></script>

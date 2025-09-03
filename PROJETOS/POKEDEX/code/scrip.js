@@ -32,6 +32,7 @@ const traducaoHabilidades = {
     blaze: "Chama",
     solar_power: "Poder Solar",
     torrent: "Torvelinho",
+    static: "Estatica"
     // adicione mais conforme precisar
 };
 
@@ -74,10 +75,21 @@ const direcionandoPokemon = async (PokemonId) => {
 
         // definindo as habilidades dos pokemons
         if (data.abilities.length > 0) {
-            data.abilities.forEach((item) => {
+            //Criando uma variavel com o titulo fixo
+            const titulo = document.createElement("h3")
+            //Atribuidno a ela um nome
+            titulo.textContent = 'Habilidades: '
+            titulo.style.marginBottom = '-2vh'
+            titulo.style.fontWeight = '800'
+            //Agregando ela a variavel mae
+            habilidades.appendChild(titulo)
+
+            data.abilities.forEach((item) => {            
                 const habilidadeItem = document.createElement('p');
                 const nomeHabilidade = traducaoHabilidades[item.ability.name] || item.ability.name;
-                habilidadeItem.textContent = `Habilidade: ${nomeHabilidade}`;
+                habilidadeItem.textContent = '* ' + nomeHabilidade;
+                habilidadeItem.style.marginBottom = '-2vh'
+                habilidadeItem.style.fontWeight = '500'
                 habilidades.appendChild(habilidadeItem);
             });
         } else {
@@ -121,6 +133,7 @@ modalPesquisa.querySelector('p').addEventListener('click', () => {
     modalPesquisa.style.display = 'none';
 });
 
+//Criando um vetor para armazenar a lista de pokemons ao buscar
 let listaPokemons = [];
 
 async function carregarPokemon(){
@@ -129,25 +142,38 @@ async function carregarPokemon(){
     listaPokemons =data.results.map(p => p.name)
 }
 
+//Chamando a função
 carregarPokemon()
 
+//Puxando o input do html
 const input = document.querySelector("#inputPesquisaPokemon")
+//Puxando o ul do html para mostar os pokemons
 const resultados = document.querySelector(".resultados")
 
+//Adicionaod um evento ao input, input significa que quando o usuario clicar sobre o input e começar a digitar, ele ativa
 input.addEventListener("input", () =>{
+    //Setando o valor em letras minusculas.
     const valor = input.value.toLowerCase()
+    //Limpando a lista caso tenha algo.
     resultados.innerHTML = ""
 
+        //Se o valor for maior que 0
     if (valor.length > 0) {
+        //Filtra a lista com os pokemons que possuem a letra digitada
         const filtrados = listaPokemons.filter(nome => nome.includes(valor));
         
+        //Criando um laço para os pokemons que possuem a mesma letra digitada
         filtrados.forEach(nome => {
+            //Criando linhas para adicionar no ul
             const li = document.createElement("li");
+            //Definindo que a primeira letra vai ser maiscula
             li.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
+            //Definindo um stilo
             li.style.padding= "10px"
             li.style.fontWeight = '800'
             li.style.boxShadow = '1px 1px  #000'
             li.style.cursor = 'pointer'
+            //Criando um evento de clique
             li.onclick = () => {
                 input.value = nome;
                 resultados.innerHTML = "";
