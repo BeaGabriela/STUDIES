@@ -1,0 +1,84 @@
+A primeira geração de computadores utilizava válvulas e componentes eletromecânicos. Velocidade em milisegundos.
+A segunda geração, Utilizava memórias de núcleo, transistores e a velocidade era em micro segundos.
+A terceira geração utilizava memorias de filme fino, negativo. Velocidade em nano segundos. Quanto mais app abertos, mais lento era o processamento. Cada app tinha uma parte do processador.
+A quarta geração utilizava circuitos integrados em escala muito alta. Velocidade de pico segundos. Processamento distribuido. 
+A quinta geração utilizava o processamento paralelo, computadores ópticos, biológicos e quânticos. E utilização da Inteligência artificial.
+
+informática refere-se ao tratamento da informação de forma automática
+
+
+O hardware é composto por elementos que são chamados de unidades funcionarias básicas:
+	Sendo eles a unidade central de processamento(cerebro), memoria principal(armazena a maior quantidade de programas) e unidades de entrada e saida.
+	Além disso, há dois tipos de hardware. O interno que seria o cerebro do computador, e o externo que seria o mouse ou teclado;
+	
+
+
+Processador tambem comhecido como CPU é o cerebro. ULA é responasveel pelos calculos e pelas operações lógicas. E a UC  controla e ordena o fluxo de dados enre memória e processador. 
+DDR - Memoria. DDR SDRAM significa memoria de caesso aleatorio dinâmico sincrona e dupla transferência. 
+Memoria. A RAM é utilizada para manter os programas em execuçaõ , tanto do uuasrio como do sistema operacional, alem disso todo o conteudo se apaga quando o computador é reiniciado ou desligado. 
+	A memoria ROM é somente de leitura utilizada pelo computador para guardar dados de forma permanentemente. 
+	
+Disco rigido é responsavel pelo armazenamento de dados de fotma permanente em um computador. . Entao, basicamente os SSDs são considerados vantajosos em relaça oao hd. 
+Placa mãe on-board  as placas de expanção basica ja vem integradas na propria placa mae. Já nas off-board ocorre que ´epreciso adqueiir cada placa de expanção a qual se deseja conectar a placa mãe. 
+A fonte é responsavel pelo fornecimento de energia. 
+O cooler refrigera o CPU. 
+O gabienteé a 'caixa' que protege  os itens.
+Barramento é o agrupamento de vias de comunicação entre diferentes componentes de hardaware. 
+BIOS é a memoria acoplada a placa-mãe. 'Progrma com instruções básicas e fundamentais para o funcionamento dos demais.'
+CACHE é a memoria presente em diversos componesntes de hardqaware. 
+Chipset controla a placa de video, rede e som onboard. 
+Placa de video responsavel por enviar para o monitor as imagens a serem exibidas ao usuario. 
+Leitor e gravaador reproduz e grava discos sob padrao cd/dvd
+
+Dispositivo de entrada tem a função de codificar os dados que entram no computador.
+Dispositivos de saída tem a função de decodificar os dados gerados pelos dispositivos de entrada. Ou seja, permitem extrair e visualizar informações que estão no computador.
+
+
+SOFTWARE
+	Basicamente é um sistema operacional que inicializa o computador e que serve de lihação entre o hardware e os demais programas.
+	
+	São divididos em 
+		Software de sistema(sist. operacional) que é executado em segundo plano, gerencia o hardware e da suportye aos app.
+		Softeare de sitema- window, linux, ios e android
+		Sotware aplicaivo - Auxilia o usuario a realizae suas tarefas
+		Softeare de sisema -´É o principaç software que eciste no computador, gerencia o hardware e deve ser adequando para cada tipo de computador.
+		
+	Tipos de softaware:
+		Proprietário - Necessita da compra dew uma licença de uso. 
+		Freeware - Pode ser instalado de forma garatuita.
+		Shareware, trial ou demo - Tem o tempo de amostra gratis.
+		Free software ou sofware livre -Permite a instalação de forma gratuita, seu uso é livre e não faz o uso de propagandas.
+		
+		
+LINGUAGEM DE PROGRAMAÇÃO
+	A diferença entre um compilador e um interpretador é que no compilador a tradução é feita uma unica vez, transformando as intruções em um arquivo executavel. Já a interpretação, toda vez que o prohgramda for execiutado, é feita a tradução.
+
+Linguagem de maquina, baixo nivel e alto nivel.
+	Linguagem de alto nivel esta proxima do programador, como C# OU PYTHON. Pois são faceis de entender para os humanos epermite desenvolver programas para realizar várias tarefas.
+	As linguagem de baixo nivel são mas amiaveis com as maquinas, onde os comandos são criados mais 'crus' perto do que uma maquina possa entender. 
+	
+	A velocidade da execução na linguagem de alto nivel é mais lento.
+	A linguagem de alto nivel tambem não é mais eficiente em termosd e memoria.
+	A linguagem de alto nivel precisa de um interpretador ou m compilador para converter em linguagem de maquina
+	A linguagme de alto nivel é facilmente comnpreensivel pelo proghramador. E pode ser executada em varias plataformas.
+	Um porgrtama escrito em linguagem de alto nivel é facil ed dempurar e manter.
+	E idiomas de alto nivel tem mais suporte da comunidade.
+	
+	
+	
+	
+Sistema Binario
+	BIt é a unidade minima de informação empregada.
+	Byte é o cojunto de 8 bits
+	Kilobyte equivale a 1024 bytes
+	Megabyte equivale a 1024 kilobtes
+	gigabyte equivake a 1024 megabyte
+	terabvyte equivale a 1024 gygabyte
+	Petabyte equibvale a 1024 terabyte
+	Exabyte equivale a 1024 petabyte
+	Zettabyte equievale a 1024	exabyte
+	Yattabyte equivale a 1024 zettabyte
+	
+
+	
+
