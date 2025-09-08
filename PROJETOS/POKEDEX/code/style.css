@@ -298,3 +298,43 @@ ul {
     cursor: pointer;
 
 }
+
+/* Criando o modal que vai cobrari a tela quando clicar em card pokeomn */
+.ModalCobrirTelaCard{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left:0;
+    background: #00000071;
+}
+
+/* Modal para colocar acima do modalCobrirTelaCard e ajustar a imagem da carta */
+.modalAjustarCard{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top:10%;
+    background-color: #0000008f;
+}
+
+#cardPokemon{
+    height: 70vh;
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+#fecharmodalCard{
+    position: absolute;
+    margin-left: 37vw;
+    margin-top: 4vh;
+    font-family: 23pt;
+    color: #fff;
+    cursor:pointer;
+}
+
+
+.modal{
+    display: none;
+    visibility: hidden;
+}

@@ -190,3 +190,17 @@ input.addEventListener("input", () =>{
 
 
 direcionandoPokemon(NumeroIdpokemon)
+
+
+
+
+
+//Criando o modal de card do pokemon
+var ModalCobrirTelaCard = document.querySelector(".ModalCobrirTelaCard")
+function AbrirModalCard(){
+    ModalCobrirTelaCard.classList.remove('modal')
+}
+
+function FecharModalTelaCard(){
+    ModalCobrirTelaCard.classList.add('modal')
+}

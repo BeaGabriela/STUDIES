@@ -64,7 +64,7 @@
 
             <!-- Definindo um botão de card -->
             <div class="carta">
-                <button type="button" id="abrirCarta">
+                <button type="button" id="abrirCarta" onclick="AbrirModalCard()">
                     <img src='../assets/game.png' id="cartaPokemonAbrir">
                 </button>
             </div>
@@ -92,9 +92,12 @@
         </nav>
     </main>
 
-    <!-- //Criando o cardpara monstra o pokeomn -->
-    <nav>
-
+    <!-- //Criando o card para monstra o pokeomn -->
+    <nav class='ModalCobrirTelaCard modal'>
+        <div class="modalAjustarCard">
+            <h2 id="fecharmodalCard" onclick="FecharModalTelaCard()">X</h2>
+            <img id='cardPokemon' src="../assets/cartaAzul.png">
+        </div>
     </nav>
 
     <!-- Definindo o Script -->
