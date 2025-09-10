@@ -122,9 +122,7 @@ nav {
 }
 
 .caracteristicas {
-    position: absolute;
-    top: 0;
-    left: 2%;
+    margin-left: 2vw;
 }
 
 /* Incluindo uma tag p pra o nome */
@@ -147,8 +145,6 @@ nav {
     text-transform: capitalize;
     transform: translate(2%, -20%);
     border-radius: 15px;
-    /* só aparece quando clicar no botão */
-    z-index: 100;
 }
 
 /* Crinado um hover para  o nome do pokemon */
@@ -337,4 +333,48 @@ ul {
 .modal{
     display: none;
     visibility: hidden;
+}
+
+
+/* Definindo o lugar do nome e imgame no card */
+.atribuicoesCard{
+    position: absolute;
+    top: 5.5vh;
+    left: 14vw;
+}
+
+#nomeVida{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.atribuicoesCard img{
+    margin-top: 2vh;
+    height: 25vh;
+}
+
+.atribuicoesCard p {
+    font-size: 12pt;
+    margin-left: 0.5vw;
+    margin-right: 5.8vw;
+    font-weight: 800;
+} 
+
+#nomePokemonCard{
+    margin-top:4.6vh;
+}
+
+
+
+.alturaPeso{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 48.2%;
+    left: 35%;
+}
+
+.alturaPeso p {
+    font-size: 10pt;
 }
