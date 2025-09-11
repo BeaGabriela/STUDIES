@@ -120,7 +120,7 @@ direcionandoPokemon(NumeroIdpokemon)
 //Criando a função de acrescentar um numero no id do pokemon e ir para o proximo
 btnSetaAvanco.addEventListener('click', () => {
     NumeroIdpokemon += 1;
-    mudarIdModalCard+=1
+    mudarIdModalCard += 1
     direcionandoPokemon(NumeroIdpokemon)
 });
 
@@ -128,7 +128,7 @@ btnSetaAvanco.addEventListener('click', () => {
 btnSetaRecuo.addEventListener('click', () => {
     if (NumeroIdpokemon > 1 || mudarIdModalCard > 1) {
         NumeroIdpokemon -= 1;
-        mudarIdModalCard -=1
+        mudarIdModalCard -= 1
     }
     direcionandoPokemon(NumeroIdpokemon)
 });
@@ -217,6 +217,27 @@ input.addEventListener("input", () => {
 
 //CRIANDO O CARD DE MONSTRAR OS POKEMONS
 
+const traducaoMovimentos = {
+    "tackle": "Investida",
+    "growl": "Rosnado",
+    "ember": "Brasa",
+    "vine-whip": "Chicote de Vinha",
+    "water-gun": "Jato d'Água",
+    "thunder-shock": "Choque do Trovão",
+    "quick-attack": "Ataque Rápido",
+    "scratch": "Arranhão",
+    "bite": "Mordida",
+    "flamethrower": "Lança-Chamas",
+    "ice-beam": "Raio de Gelo",
+    "hyper-beam": "Hiper Raio",
+    "earthquake": "Terremoto",
+    "psychic": "Psíquico",
+    "surf": "Surfar",
+    "shadow-ball": "Bola Sombria",
+    "sword-dance": "Dança da espada"
+    // ... você pode ir adicionando os mais usados
+};
+
 
 //Pegando o varivael do HTML
 var ModalCobrirTelaCard = document.querySelector(".ModalCobrirTelaCard")
@@ -241,6 +262,9 @@ async function AbrirModalCard(mudarIdModalCard) {
     //Atribuindo a variavel do Html ao peso do pokemon
     var pesoPokemon = document.querySelector("#pesoPokemon")
 
+    //Definindo os movimentos do pokemon
+    var movimentos = document.querySelector("#movimentos")
+
     //Criando um if para verificar se minha API tem conteudo
     if (data) {
         // Direcionando a imagem do pokemon para usar display block
@@ -248,11 +272,26 @@ async function AbrirModalCard(mudarIdModalCard) {
         // Definindo o nome do pokemon baseado no json
         nomePokemonCard.innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1);
         //Definindo a vida do pokemon
-        vidaPokemon.innerHTML = data.base_experience
+        vidaPokemon.innerHTML = "ps " + data.base_experience
         //Definindo a altura do pokemon em metros
         alturaPokemon.innerHTML = "Altura: " + (data.height / 10).toFixed(2) + " m";
         //Definindo o peso do pokemon em kg
         pesoPokemon.innerHTML = "Peso: " + (data.weight / 10).toFixed(1) + " kg";
+        
+        //Definindo os movimentos do pokemon
+        data.moves.slice(0,2).forEach((item) => { 
+            movimentos.innerHTML = ''
+            var linhaMovimentos = document.createElement("li")
+            const traducaoMovimento = traducaoMovimentos[item.move.name] || item.move.name;
+            // console.log(traducaoMovimento)
+            linhaMovimentos.innerHTML = traducaoMovimento
+            movimentos.appendChild(linhaMovimentos)
+        })
+        
+
+        
+
+
 
 
 

@@ -274,8 +274,7 @@ nav p {
     margin-top: 1vh;
 
 }
-
-ul {
+.resultados {
     color: #fff;
     background-color: #585555;
     margin-left: 15vw;
@@ -357,7 +356,7 @@ ul {
 .atribuicoesCard p {
     font-size: 12pt;
     margin-left: 0.5vw;
-    margin-right: 5.8vw;
+    margin-right: 4vw;
     font-weight: 800;
 } 
 
@@ -377,4 +376,17 @@ ul {
 
 .alturaPeso p {
     font-size: 10pt;
+}
+
+.movimentosPokemon{
+    height: 15vh;
+    width: 19vw;
+    position: absolute;
+    top: 46vh;
+    left: 10.4vw;
+}
+
+.movimentosPokemon ul{
+    margin-left: 4vw;
+    margin-top: 2vh;
 }
