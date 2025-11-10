@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url('../../assets/fundoPokemons.jpg');
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.container{
+    background-color: rgba(128, 128, 128, 0.671);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /*Serve para calcular uma fração da coluna*/
+    gap:5px;
+    padding: 20px;
+}
+
+
+.flipped{
+    height: 180px;
+    width: 130px;
+    background-color: #ff14148c;
+    background-image:  url("../../assets/pokebola.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+
+
+.flipped:hover{
+     background-color:rgb(248, 22, 22);
+    cursor: pointer;
+}
+
+
+.card{
+    height: 180px;
+    width: 130px;
+    background-color: #f7df0e8c;
+    border: 2px solid #000;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+     background-color:rgb(248, 233, 22);
+    cursor: pointer;
+}
+
+
+.card > img{
+    width: 100px;
+
+}
+
+.no-click{
+    pointer-events: none
+}
+
+.material-icons{
+    position: absolute;
+    top: 6vh;
+    right: 95vw;
+    cursor: pointer;
+    color: #000;
+}
