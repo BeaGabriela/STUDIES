@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/pokebola.png" type="image/x-icon">
+    <!-- Link para usar os icones  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <!-- Definindo a localização da pokedex  na tela -->
+    <!-- Imagem da pokedex -->
+    <img id="pokedex" src="../../assets/Pokedex2.png" />
+
+    <!-- Definindo a localização e a cemtralização do ambiente fundo do pokemon -->
+    <div class="ambiente">
+        <img src="../../assets/ambiente.jpg" alt="ambiente">
+        <!-- Defininfo as medidas e a localização do pokemon -->
+        <div class="pokemon">
+            <img src="../../assets/pokebola.png" id="pokemonImagem" />
+        </div>
+    </div>
+
+    <!-- Definindo a localização das caracteristicas do pokemon -->
+    <nav>
+        <div>
+            <div class="caracteristicas">
+                <div class="nomePokemon">
+                    <!-- <img src="../assets/fogo.png" alt=""> -->
+                    <p id="nome">Nome</p>
+                </div>
+                <div id="divHabilidades">
+                    <p id="habilidades">Caracteristicas fisicas</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Definido a localização das setas de avanço -->
+    <div class="setaAvanco">
+        <img src="../../assets/setinha.png">
+    </div>
+
+    <!-- Definido a localização das setas de recuo -->
+    <div class="setaRecuo">
+        <img src="../../assets/setinha.png">
+    </div>
+
+    <!-- Definir o numero do pokemon -->
+    <div id="Npokemon">
+        <h1 id="numeroPokemon">Nº:02</h1>
+    </div>
+
+    <nav class="acoesLateral">
+        <!-- Dfinindo um input para pesquisa de pokemons -->
+        <div class="pesquisa">
+            <button type="button" id="abrirModalPesquisar"><i class="material-icons large">search</i></button>
+        </div>
+
+        <!-- Definindo um botão de card -->
+        <div class="carta">
+            <button type="button" id="abrirCarta" onclick="AbrirModalCard()">
+                <img src='../../assets/pokemon-go.png' id="cartaPokemonAbrir">
+            </button>
+        </div>
+
+        <!-- Definindo um botão de favoritar -->
+        <div class="gamezinho">
+            <button type="button" id="gameButton">
+                <a href="../Tela_Jogo/jogoPokemon.html"><img src='../../assets/game.png' id="gameIMG"></a>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
+    <!-- <nav class='telaPesquisa  '>
+        <div class="divCentralPesquisa">
+            <p id="fecharmodalPesquisa">x</p>
+            <nav>
+                <input type="text" name="" id="inputPesquisaPokemon">
+                <ul class='resultados'></ul>
+                <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button>
+            </nav>
+        </div>
+    </nav> -->
+    </main>
+
+    <!-- //Criando o card para monstra o pokeomn -->
+    <nav class='ModalCobrirTelaCard modal'>
+        <div class="modalAjustarCard">
+            <h2 id="fecharmodalCard" onclick="FecharModalTelaCard()">X</h2>
+            <img id='cardPokemon' src="../assets/cartaAzul.png">
+            <!-- Div de atribuir o nome, vida e a imagem do pokemon na carta -->
+            <div class='atribuicoesCard'>
+                <div id="nomeVida">
+                    <p id="nomePokemonCard">Pokwmon</p>
+                    <p id="vidaPokemon">132</p>
+                </div>
+                <img id="pokemonImagemCarta" src="../assets/pokebola.png">
+            </div>
+            <!-- Div de atribuir a altura e o peso dp pokemon -->
+            <div class="alturaPeso">
+                <p id="alturaPokemon">altura = 1,2</p>
+                <p id="pesoPokemon">peso = 28kg</p>
+            </div>
+            <!-- Div de habilidades no card -->
+             <div class="movimentosPokemon">
+                <ul id="movimentos"></ul>
+             </div>
+        </div>
+    </nav>
+
+</body>
+  <!-- Definindo o Script -->
+    <script src="./scrip.js"></script>
+</html>
