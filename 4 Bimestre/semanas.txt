@@ -1,0 +1,410 @@
+	####Fundamentos web e internet####
+	SEMANA 1
+		Modelo TCP/IP -> Aplicação, Transporte, Internet e Acesso a rede;
+			-> Formatação e representação de mensagens: Camada de aplicação.
+			
+		Modelo OSI -> Não implementado na prática, apenas teoricamente.
+			-> Camadas: Camada fisica, enlace de dados, rede, transporte, sessão, Apresentação e Aplicação. 
+		
+		Protocolo de comunicação: 
+			Formato e ordem das mensagens trocadas por 2 ou mais entidades comunicantes.
+		
+		Modelo em camada permite -> Cada camada é responsavel por uma tarefa.
+								 -> Facilita a comunicação entre computadores com diferentes hardwares e sotwares.
+	
+	
+	SEMANA 2
+		Modelo TCP/IP -> Protocolos: IP, TCP, UDP
+		
+		Cada camada de um modelo de comunicação possui um ou mais protocolos.
+		
+		No protocolo UDP, não há estabelecimento de conexão. 
+		O UDP agrega menos sobrecarga de cabeçalho de pacote do que o TCP. 
+	    Com o UDP, é possível ter mais controle no nível de aplicação sobre quais dados serão enviados e quando. 
+		UDP seja um protocolo sem conexão e não confiável (ou seja, não garante entrega, ordem ou integridade dos dados)
+		
+		
+	SEMANA 3
+		Dados que consumimos no www, estao armazenados em servidores web.
+		*** O usuário/cliente/browser não consegue acessar diretamente o arquivo que deseja ler sem pedir para o servidor.
+		
+		A web possui 3 padrões:
+			URL - sistema que especifica como cada página de informação recebe um "endereço" único onde pode ser encontrada.
+			HTTP - um protocolo que especifica como o navegador e servidor web se comunicam entre si
+			HTML- uma linguagem de marcação para codificar a informação de modo que possa ser exibida em uma grande quantidade de dispositivos.
+			
+			**servidor Web é basicamente um programa que escuta os pedidos dos navegadores ou aplicações clientes e realiza a execução desses pedido
+			
+			DNS é um registro de nomes que fornece o número IP necessário para a localização adequada de um site em um servidor.
+			
+			A linha de cabeçalho de uma requisição HTTP, que informa o servidor que a conexão deve ser fechada após o envio do recurso requisitado, é: connection:close
+			
+			A entidade responsável por transformar uma parte da URL em um endereço IP é:  : DNS
+			
+			Sim, exatamente! O HTTP (Hypertext Transfer Protocol) é o protocolo que define como a comunicação entre cliente e servidor acontece na web
+			
+			O FTP (File Transfer Protocol) foi uma das funcionalidades decisivas nesse contexto, pois permitia a transferência de arquivos entre cliente e servidor, viabilizando o acesso a conteúdos hospedados remotamente
+			
+			) Servidores são máquinas especiais destinadas a armazenar sites web.
+	
+	SEMANA 4
+		tag <head> é a responsável por encapsular declarações de scripts (como JavaScript) e formatações CSS em um documento HTML.
+		🔤 O HTML não diferencia letras maiúsculas de minúsculas nas tags.
+		listas em html = ul
+	
+	SEMANA 5
+		O elemento HTML5 responsável por definir uma área para o conteúdo principal da página é o: Article.
+		
+		A publicação da tecnologia XForms foi decisiva para a evolução da linguagem HTML.”
+		
+	SEMANA 6
+		Não é mais comum utilizar atributos de apresentação nos elementos HTML, como font e color nas tags.
+		Com o CSS, não é possivel incorporar a semântica de apresentação nos elementos HTML.
+		
+		O elemento HTML que permite adicionar uma citação em uma única linha é: <q>
+		As regras em CSS podem ser definidas em diferentes lugares, como interno, externo, inline e padrão do navegador. Qual a ordem correta de prioridades para formatação? 
+			Inline, interno, externo e padrao
+********************************************************
+	
+	######Estastistica e Probabilidade#######
+	SEMANA 1
+		Estastistica é a ciencia que emprega metodos bem definidos para coletar, organizar, eresumir, apresentar e analisar dados. Tirando conclus~]oes baseadas nessas anaalises. 
+			-> Estastistica descritiva - Emprega estatisticcas descritivas como medidas- resumo e dispositivos graficos derivados dos dados apra descreve-los.
+			-> Estastistica inferencial - Busca inferir propriedades de uma população ou distribuição de probabilidade a partir dos dados, atrasves de estimativas matematicas e testes de hipoteses. 
+			
+			Qualitativa -> Dados que consistem em atriutosm rótulos ou entradas não numericas, -> Nominal(classificam dados em diferentes categorias, 'estado civil') Ordinais (Dados que podem ser ordenados de alguma forma, 'tamanho de roupa').
+			Quantitativa -> Dados númericos. -> Discretas (Numeros que podem assumir somente um conjunto discreto de vlor, 'dias de ferias'), continuas (Dados que podem ssumir valores em um intervalor eral, 'preço')
+			
+			Niveis de mesuração:
+			Escala nominal: dados categóricos, não se pode realizar cálculos matemáticos com eles.
+			Escala ordinal: dados podem ser ordenados mas diferenças entre valores não têm sentido matemático
+			
+			Escala intervalar: dados podem ser ordenados e diferenças entre valores têm sentido matemático
+			Escala de razão: dados podem ser ordenados, diferenças entre valores têm sentido matemático e a ala possui um “zero natural” → dados podem ser expressos como múltiplos uns dos outros
+			
+			valores numéricos com ordem e intervalos significativos entre eles, o que caracteriza o nível intervalar.
+			
+			Nominal: apenas classifica, sem ordem (ex: nomes de países).
+
+			Ordinal: tem ordem, mas sem intervalos definidos (ex: posições em um ranking).
+
+			Racional: tem ordem, intervalos e zero absoluto (ex: altura, peso).
+
+			Qualitativo: não se aplica, pois os dados são numéricos.
+			
+			população se refere ao conjunto total de elementos
+			
+			O número de dígitos significativos indica o erro máximo associado ao valor declarado, os limites numéricos dentro do qual se encontra o valor verdadeiro e o nível de precisão associado ao valor
+			Digito imediatamente seguinte vale0,1,2,3 ou 4, arredomdamos para anterior  ex: 3,14 = 3.1
+			Se for 6, 7, 8 ou 9, arredomdamos para cima 2,718 = 2,72
+			
+			Critérios de arredondamento são importantes também no design de computadores (hardware e software) já que computadores são intrinsecamente discretos e não podem representar números reais arbitrários
+
+	SEMANA 2
+	
+		Medida de posição ou de tendência central: um valor que localiza os dados na reta numérica ou representa  uma observação típica do conjunto de dados
+		Medida de dispersão: uma medida que representa o quanto os valores estão espalhados, isto é, a variabilidade dos dados
+		
+		 Quando a distribuição é assimétrica à esquerda, temos a ocorrência de valores que estão “mais longe” à esquerda do máximo da distribuição do que valores que ocorrem à direita do máximo da distribuição, puxando o valor da média para a esquerda. Já a mediana, que é o valor que divide os dados em duas partes de mesmo tamanho, está localizada à direita da média, pois geralmente a cauda à esquerda não é tão longa ou gorda a ponto de concentrar mais da metade dos dados. Finalmente, como a moda corresponde ao máximo da distribuição e esse máximo fica à direita em uma distribuição assimétrica à esquerda, geralmente a moda fica à direita dos valores da média e da mediana.
+		 assimétrica a esquerda : média < mediana < moda
+		 A amplitude de classe em uma distribuição de frequências representa o tamanho de cada intervalo — ou seja, a diferença entre o limite superior e o limite inferior de uma classe
+		 
+	
+	SEMANA 3
+		Probabilidade é um número que associamos a um evento- algo que pode acontecer - e que, grosso modo, corresponde à nossa expectativa de que o evento realmente possa acontecer
+		 p(A) = Numeros de vezes que observamos aquilo se rpetir/ numero total
+		 
+		Um experimento aleatório é um experimento cujo resultado não podemos prever de antemão
+		 ▪ O resultado do lançamento de um dado ou moeda
+		 ▪ Os números que serão sorteados na loteria
+		 ▪ O preço de determinada ação de empresa amanhã
+		 
+		O estudo de experimentos aleatórios e de suas probabilidades envolve dois elementos:
+			▪ Uma função probabilidade
+				P(w) é uma função que associa a cada evento elementar w E (simbolo de ohms) em um numero real
+				
+		
+		Probabilidade Condicional
+			"Sabendo que o evento b ocorreu, qual a probabilidade do evento a ocorrer tmabem?"
+			 Em geral = P(A/B) _> P(A)
+				Esse símbolo P(A ∩ B) é lido como: “Probabilidade da interseção dos eventos A e B”
+		
+				
+			* Um espaço amostral 
+				é um conjunto que contem todos os possiveis resultados do experimento aleatório -> O espaço amostral depeende do que queremos observar.
+			
+		
+	SEMANA 4 
+		Matematicamente, uma variacel aleatoria é uma função:
+			X: (Simbolo de resistecias) -> R
+			
+		FX(x) = P(X ≤ x)
+				Essa é a definição da função de distribuição acumulada (FDA) de uma variável aleatória 𝑋. Ela representa a probabilidade de que 𝑋 assuma um valor menor ou igual a 𝑥.
+		
+		Bernoulli ->	Apenas uma tentativa (sucesso ou falha)	
+		Binomial ->	Número de sucessos em n tentativas fixas
+		Geométrica -> 	Número de tentativas até o primeiro sucesso	
+		Poisson	Número ->  de eventos em um intervalo de tempo ou espaço	❌ Não
+		Hipergeométrica	 -> Amostragem sem reposição
+		
+		
+	SEMANA 5 
+		O que acontece com a distribuição gama Γ(α,λ) , quando o parâmetro α assume o valor α=1 ? 
+			Ela se torna uma distribuição exponencial de parâmetro λ.
+			
+	
+	SEMANA 6
+		A desigualdade de Chebyshev é derivada a partir da desigualdade de Markov
+		A Lei dos Grandes Números afirma que, ao repetir um experimento aleatório muitas vezes, a média dos resultados observados tende a se aproximar do valor esperado (média teórica da população)
+		
+	SEMANA 7
+		Que propriedades um bom estimador O-  de um parâmetro populacional θ deve possuir? 
+			Ele deve ser não tendencioso, eficiente e consistente.
+			
+		distribuição de probabilidades da média amostral de uma população da qual não se conhece a variância?
+			Distribuição t de Student
+
+	
+*****************************************************************
+	##########Programação orientada a objetos#########
+	
+	SEMANA 1
+		O que é paradigma de programação?
+			Uma forma de classificar  as linguagens de programação, baseadas em suas funcionalidades.
+				Programação Funcional: Programadores abstraem o programa como uma sequência de funções executadas de modo empilhado.
+				Programação declarativa: Programador modela o problema por meio de assertivas em relação aos objetos do universo em questão: Exemplo: SQL e HTM
+				Programação Procedural: É baseado no conceito de chamadas a procedimentos, conhecidos como rotinas, sub-rotinas, métodos. 
+				 Programação Orientada a Objetos: Muito conhecido pela sigla POO, é um modelo de análise, projeto e programação de software, baseado na composição e interação entre várias unidades conhecidas como objetos.
+				
+		Programação Orientada a Obetos	
+			Todos os objetos possuem estado e comportamento.
+		
+		A principal mensagem que a POO nos fornece é:
+			Reduzir os programas em partes resulta em metas mais fáceis de se alcançar
+			Os programas são basicamente interações entre objetos, o que faz com que surjam padrões comuns
+
+		Meu Primeiro Programa Java
+			Etapa 1: Criação de um programa Java
+				- Inserção de códigos pelo programador usando um editor
+			
+			Etapa 2: Compilação do programa Java em bytecodes
+				- O compilador vai transformar o codigo.java em código.class (bytecodes), que representam as 
+				  tarefas a serem executadas na fase de execução
+				- A vantagem dos bytecodes é que eles são portáveis e independem de plataforma
+			
+			Etapa 3: Carrega o programa Java em memória
+				- A Java Virtual Machine (JVM) armazena o programa em memória para executá-lo, efetuando o seu carregamento. 
+				  O carregador de classe, pega o .class que tem os bytecodes do programa e os transfere para a memória principal
+	
+			Etapa 4: Verificar os bytecodes
+				- Enquanto as classes são carregadas, o verificador examina seus bytecodes para ter certeza que são válidas 
+			
+			Etapa 5: Executar o programa Java
+				- A JVM executa os bytecodes utilizando uma combinação de interpretação (Just in Time), conhecido como compilador Java HotSpotO Java HotSpot traduz os bytecodes para a
+		
+       Podemos executar em qualquer lugar (em SOs distintos
+
+		Métodos - Ações do objeto.
+		Atributos - Propriedades e caracteristicas do objeto
+		Abstração - Focr apenas nos detalhe mais relevantes.
+		
+	
+	SEMANA 2
+	Encapsulamento?
+		Significa separar o programa em partes de forma mais isolada possivel.
+			Isso ajuda a tornar o software mais flexcivel, conrtolar acesso aos atributos, sendo uma forma de porteger os dados. E evita que os dados sofram acessos indevidos.
+			
+		Ocultação da Informação
+			 Mecanismo para restringir o acesso a alguns dos componentes do objeto
+			 
+		* Em Programação Orientada a Objetos a ocultação de informação é parte do encapsulamento
+		* Em resumo, eu não preciso saber como é feito a lógico de determinados métodos, pois somente preciso chama-los e utilizar seus resultado
+       
+	 
+	Os modificadores de acesso são padrões de visibilidade de acessos às classes, atributos e métodos. São palavras-chaves reservadas pelo Java, e que não podem ser usadas como nome de métodos, classes ou atributos. Os modificadores são: public, private, protected e default. 
+		public: uma declaração com este modificador pode ser acessada de qualquer lugar e por qualquer entidade que possa visualizara classe 
+		private: os métodos definidos como private não podem ser acessados ou usados por nenhuma outra classe. 
+		protected: torna o membro acessível às classes do mesmo pacote ou por meio de herança. Seus membros herdados não são acessíveis a outras classes fora do pacote em que foram declarados. 
+		default: classes e membros somente acessíveis por classes do mesmo pacote, sendo que em sua declaração não é definido nenhum tipo de modificador, o qual é identificado pelo compilador
+  
+	objetos:
+		 Estado: É definido pelas propriedades, ou seja, os atributos que ele possui e pelos valores que tais propriedades assumem
+		 Comportamento: É definido pela forma como o objeto reage, quando seu estado muda e também o relacionamento com os outros objetos.
+		 Identidade: cada objeto é único
+		 
+		*Os objetos são uma forma de diminuir o gap semântico*
+		
+		 • Classe: é apenas uma abstração
+		 • Objeto: é uma entidade concreta
+	
+	String[]: é um array de Strings, que define o tipo de dado que o método main recebe como argumento.
+	public: é o modificador de acesso, permitindo que o método seja acessado de qualquer lugar.
+	args: é o nome da variável que representa os argumentos passados pela linha de comando ao executar o programa.
+	
+	SEMANA 3
+		✅ “A classe mais específica ou subclasse pode herdar atributos e métodos da superclasse.”
+		
+		Interface tem por objetivo criar um contrato em que a classe que a implementa deve obrigatoriamente obedecer
+		Em Java para lidar com interfaces, utilizamos a palavra reservada interfac
+		
+		A herança em Java (e em outras linguagens orientadas a objetos) tem como uma das principais vantagens a reutilização de código.
+			Podemos declarar um campo na classe filha com o mesmo nome da classe mãe, mesmo que os tipos sejam diferente
+			Podemos sobrescrever um método da classe mãe, declarando um método com a mesma assinatura, o que chamamos de polimorfismo
+			Também podemos declarar novos métodos e campos na classe filha, o que denomina-se de especialização
+
+		
+		Classes Abstratas
+			• Usamos classes abstratas quando desejamos definir uma classe mais geral, representando objetos de modo mais genérico, porém, sem instanciá-los
+			
+		extends - Termo utilizado na classe-filha para herdar a classe mãe.
+		super - Termo utilizado pa\ra chamada de construtor da classe-mãe
+		this - Termo utilizado para referenciar um atributo externo fora de um método.
+	
+	SEMANA 4
+		O Java Collections Framework é baseado em uma hierarquia em árvore de interfaces e classes que são derivadas da interface Collection.
+			Objetos de tipo iterador tem-se que: 
+				são utilizados para percorrer e remover elementos de uma coleção, sendo uma interface que apresenta 3 métodos.
+				
+			Em Java, o uso de Generics não é obrigatório, mas é altamente recomendado.
+			
+			Métodos como:
+				 add e offer: inserem um elemento na fila
+				 remove e pool: removem e retornam o elemento do início
+				 element e peek: retornam, porém não removem, o elemento do iníci
+			Usa Generics corretamente com a sintaxe <Carro>, indicando que a lista armazenará apenas objetos da classe Carro.
+			
+	SEMANA 5
+		A forma correta de declarar um mapa é:
+			Map<E> mapa = new Type()
+			
+		set é uma interface que representa grupos de elementos sem duplicatas, sendo que uma das características é não precisa especificar a posição para adicionar um elemento.
+		A interface Set em Java não permite elementos duplicados.
+		
+		treeset  -> Ordem alfabeica/ordemo normal;
+		Hashset -> ordem de inserção
+		
+	SEMANA 6
+		Uma exceção é um evento indesejado que interrompe o fluxo normal do programa
+		No Java, todas as classes de exceção herdam direta ou indiretamente da classe Exception
+		Quando um erro ou situação anormal é encontrado durante a execução de um método, um objeto de exceção é gerado
+		Para lidar com excessões, usa-se try-catch
+		
+	SEMANA 7
+		Em relação ao que representam as streams e suas características, assinale a alternativa correta: 
+			Representam o fluxo contínuo de dados de entrada e saída. 
+			
+		Em relação a utilização de streams em Java assinale a alternativa correta: 
+			Um objeto pode converter diversos campos de tipos primitivos ou outros tipos de objetos.
+		
+		As threads são ramificações do fluxo de controle de processos, sendo mais leves que os processos. 
+		
+		Para criar um socket TCP em um programa servidor Java, o comando correto é:
+			✅ ServerSocket serverSocket = new ServerSocket(port);
+	
+**********************************************************************
+
+	#######Gestão da inovação e desenvolvimento#######:
+	SEMANA 1
+		Tablet -> Bem fisico = Inovação de produto.
+		Apecto mais marcante  da inovação radical -> Representa uma ruotura no mercado.
+		
+		Inovação corresponde à efetiva aplicação prática de uma invenção.
+
+		As ondas tecnolgicas estão cada vez mais curtas, ou seja, o periodo entre grandes tranformações economicas estão diminuindo, tornando o processo de destruição criatica mais acelerado.
+		
+		
+	
+	SEMANA 2
+		Estratégias de inovação	
+			Estratégia ofensiva 
+				• Monopólio de tecnologia
+				• Pioneirismo
+				• P&D, marketing e aspecto pedagógico
+		
+		Estratégia defensiva
+				• Boa base tecnológica para introduzir versões melhoradas de produtos
+				• Ex.: Samsung pagou US$ 539 mi por violação de patentes da Apple
+		
+		Estratégia imitativa
+			• Originalmente, os PCs da HP eram clones dos da IB
+			
+		
+		Uma cultura voltada para o fomento da inovação utiliza seus sistemas de controle para orientar os colaboradores, institui mecanismos de recompensa com base em sua contribuição para a organização, define estruturas flexíveis e reconhece a importância dos vínculos externos como fontes de inovação.
+		O atributo organizacional que se caracteriza pelo respeito mútuo entre indivíduos e uma propensão ao trabalho colaborativo entre grupos é:
+			*Cooperação interdepartamental e coordenação dentro da estrutura organizacional
+			
+	
+	
+	SEMANA 3
+		 Os modelos de DNP refletem a forma como a organização aborda o processo de inovação
+			 • O DNP é um processo de negócio estratégico
+			 • Time-to-market é importante
+			 • Integração entre as áreas da empresa 
+			 • Vínculos externos
+			 • Avaliação constante
+
+
+			Modelo linear de DNP
+				Geração da ideia
+				Varredura da ideia
+				Teste do conceito
+				Análise do negócio
+				Desenvolvimento do produto
+				Teste de marketing
+				Comercialização
+				Monitoramento/avaliação
+				
+			Dentro dos 4 Ps do marketing — Produto, Preço, Praça e Promoção — os elementos praça e promoção têm significados específicos:
+			Praça:
+				Refere-se à distribuição do produto, ou seja:
+				Transportes
+				Logística
+				Canais de entrega
+				Localização dos pontos de venda
+				
+			Promoção:
+			   Envolve as estratégias para divulgar e comunicar o produto ao público:
+				Propaganda
+				Publicidade
+				Promoções de vendas
+				Marketing direto
+				Relações públicas
+				
+			A estratégia de desnatação (ou skimming) consiste em:
+				Lançar o produto com preço alto inicialmente
+				Focar em consumidores dispostos a pagar mais (early adopters, nichos premium)
+				Reduzir gradualmente o preço para atingir públicos mais amplos ao longo do tempo
+				Essa abordagem é comum em produtos tecnológicos, moda, e lançamentos inovadores, onde o valor percebido é alto no início
+				
+		
+	SEMANA 4 
+		Modelo de Graham Wallas
+			 • Preparação = coleta de informações
+			 • Incubação = descanso mental
+			 • Iluminação = solução 
+			 • Verificação = ajuste e implementação
+	
+		Lado direito do cerebro:
+				 Tarefas não verbais
+				Acionado ao ouvir músicas
+				
+		Lado esquerdo do cerebro
+			Tarefas verbais
+			Acionado ao ler um jornal
+			Responsável pelas tarefas lógicas
+			
+		Linguagem, lógica, leitura	 -> Esquerdo
+		Música, intuição, criatividade -> 	Direito
+		
+	SEMANA 5
+		 Característica do mínimo produto viável
+			Incorpora modificações mediante coleta de informações junto a um grupo de usuários/clientes. 
+			
+		Etapas do Design Thinking:
+			Empatia, definição, idealização, prototipação e testagem.
+			
+	
+	SEMANA 6
+		A política de preços, descontos e estratégias de promoção de produtos é descrita na seção de Marketing e Vendas do plano de negócios
+		Qual é a principal seção do plano de negócios? Por quê? 
+			Sumário executivo, pois apresenta uma síntese das principais informações do plano, o que pode despertar o interesse de um investidor. 
