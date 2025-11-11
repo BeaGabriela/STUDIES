@@ -62,7 +62,7 @@ const direcionandoPokemon = async (PokemonId) => {
         //Definindo o nome do pokemon baseado no json
         nomePokemon.innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1);
         //Definindo o id do pokemon
-        numeroPokemon.innerHTML = "Nº:" +  data.id;
+        numeroPokemon.innerHTML = "Nº:" + data.id;
         // Definindo que avariavel declarada na parte superior. agora tem o valor do id
         NumeroIdpokemon = data.id
 
@@ -90,7 +90,8 @@ const direcionandoPokemon = async (PokemonId) => {
                 const nomeHabilidade = traducaoHabilidades[item.ability.name] || item.ability.name;
                 //Setar alguns estiloso para ela
                 habilidadeItem.textContent = '* ' + nomeHabilidade;
-                habilidadeItem.style.marginBottom = '-6vh'
+                habilidadeItem.style.marginBottom = '-1vh'
+                habilidadeItem.style.marginTop = '3vh'
                 habilidadeItem.style.fontWeight = '500'
                 //Atribuindo essa variavel criada a variavel mãe do HTML
                 habilidades.appendChild(habilidadeItem);
@@ -217,16 +218,12 @@ input.addEventListener("input", () => {
 
 //CRIANDO O CARD DE MONSTRAR OS POKEMONS
 
-
-//Pegando o varivael do HTML
-var ModalCobrirTelaCard = document.querySelector(".ModalCobrirTelaCard")
-
 //Quando o botão de card for acionado no HTML, ele retirará o modal e abrirá a tela de card.
 async function AbrirModalCard(mudarIdModalCard) {
     //Pegando  a div do Html da qual eu vou turar o mdodal
     var abrirCartaPokemon = document.querySelector(".ModalCobrirTelaCard")
     //Tirando o modal da div
-    abrirCartaPokemon.classList.remove("modal")    
+    abrirCartaPokemon.classList.remove("modal")
 
     //Criando uma variavel que será atribuido a api
     const data = await fetchPokemon(NumeroIdpokemon)
@@ -284,8 +281,10 @@ async function AbrirModalCard(mudarIdModalCard) {
 // console.log(NumeroIdpokemon)
 
 
-//Fechando modal da card quando licaco no x
+//Fechando modal da card quando clica no x
 function FecharModalTelaCard() {
+    //Pegando o varivael do HTML
+    var ModalCobrirTelaCard = document.querySelector(".ModalCobrirTelaCard")
     ModalCobrirTelaCard.classList.add('modal')
 }
 

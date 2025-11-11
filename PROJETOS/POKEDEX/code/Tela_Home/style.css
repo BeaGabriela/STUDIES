@@ -188,23 +188,24 @@ nav img {
 
 /* Definindo a localização das caracteristicas */
 nav p {
-    margin-top: 4vh;
+    margin-top: -1vh;
     margin-right: 1vw;
 }
 
 /* Definindo o local da div  que vai conter as habildiades */
 #divHabilidades {
-    margin-top: -38vh;
+    margin-top: -35vh;
     margin-left: 27.9vw;
-    height: 15vh;
+    height: 16.5vh;
     width: 17vw;
     background-color: #fff;
     border-radius: 10px;
+    overflow-x: scroll;
 }
 
 /* Alterando o  lugar das habidiades */
 #divHabilidades>p {
-    padding: 5px;
+    padding: 4px;
 
 }
 
@@ -225,6 +226,7 @@ nav p {
 .setaRecuo>img {
     height: 6vh;
     margin-top: 1px;
+    cursor: pointer;
 }
 
 /* É necessario você definir a parte clicavel da div de seta de recuo em conjunto com a imgame de recuo*/
@@ -268,7 +270,7 @@ nav p {
 .telaPesquisa {
     height: 30%;
     width: 18%;
-    position: fixed;
+    position: absolute;
     top: 75%;
     left: 674px;
     transform: translate(-50%, -50%);
@@ -375,10 +377,10 @@ nav p {
     visibility: hidden;
 }
 
-#modal {
+/* #modal {
     display: none;
     visibility: hidden;
-}
+} */
 
 
 /* Definindo o lugar do nome e imgame no card */
@@ -392,6 +394,11 @@ nav p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#vidaPokemon{
+    margin-top: 4.4vh;
+    margin-left: 1vw;
 }
 
 .atribuicoesCard img {
@@ -411,12 +418,11 @@ nav p {
 }
 
 
-
 .alturaPeso {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 48.2%;
+    top: 54.4%;
     left: 35%;
 }
 
@@ -429,7 +435,7 @@ nav p {
     width: 19vw;
     position: absolute;
     top: 46vh;
-    left: 10.4vw;
+    left: 6vw;
 }
 
 .movimentosPokemon ul {
