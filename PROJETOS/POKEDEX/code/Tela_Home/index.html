@@ -40,16 +40,6 @@
         </div>
     </nav>
 
-    <!-- Definido a localização das setas de avanço -->
-    <div class="setaAvanco">
-        <img src="../../assets/setinha.png">
-    </div>
-
-    <!-- Definido a localização das setas de recuo -->
-    <div class="setaRecuo">
-        <img src="../../assets/setinha.png">
-    </div>
-
     <!-- Definir o numero do pokemon -->
     <div id="Npokemon">
         <h1 id="numeroPokemon">Nº:02</h1>
@@ -76,18 +66,34 @@
         </div>
     </nav>
 
+    <!-- Definido a localização das setas de avanço -->
+    <div class="setaAvanco">
+        <img src="../../assets/setinha.png">
+    </div>
+
+    <!-- Definido a localização das setas de recuo -->
+    <div class="setaRecuo">
+        <img src="../../assets/setinha.png">
+    </div>
+    </main>
+
     <!-- Criando a tela de pesquisa de pokemon, como um model que aparece e desaparece -->
-    <!-- <nav class='telaPesquisa  '>
+    <nav class='telaPesquisa  '>
         <div class="divCentralPesquisa">
             <p id="fecharmodalPesquisa">x</p>
             <nav>
+                <img src='../../assets/avatar.png' id="imagemModalPesquisa">
                 <input type="text" name="" id="inputPesquisaPokemon">
-                <ul class='resultados'></ul>
+                <div class='resultados'>
+                    <ul class="linhaResultado">
+                        <img src='../../assets/avatar.png'>
+                        <p>Dito</p>
+                    </ul>
+                </div>
                 <button type="button" id="buscarPokemon"><i class="large material-icons">search</i></button>
             </nav>
         </div>
-    </nav> -->
-    </main>
+    </nav>
 
     <!-- //Criando o card para monstra o pokeomn -->
     <nav class='ModalCobrirTelaCard modal'>
@@ -108,13 +114,14 @@
                 <p id="pesoPokemon">peso = 28kg</p>
             </div>
             <!-- Div de habilidades no card -->
-             <div class="movimentosPokemon">
+            <div class="movimentosPokemon">
                 <ul id="movimentos"></ul>
-             </div>
+            </div>
         </div>
     </nav>
 
 </body>
-  <!-- Definindo o Script -->
-    <script src="./scrip.js"></script>
+<!-- Definindo o Script -->
+<script src="./scrip.js"></script>
+
 </html>
