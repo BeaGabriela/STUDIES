@@ -296,11 +296,11 @@ nav p {
 }
 /* Mudando  o input de pesquisa */
 #inputPesquisaPokemon {
-    width: 16vw;
-    padding: 0.5em;
+    width: 18vw;
+    padding: 0.7em;
     border-radius: 8px;
     border: none;
-    margin-left: 14vw;
+    margin-left: 13vw;
     margin-top: 5vh;
     background-color: #C1DBDC;
     color: #000;
@@ -315,37 +315,43 @@ nav p {
     border: none;
     cursor: pointer;
     margin-left: 12vw;
-    margin-top: 1vh;
+    margin-top: 1vh;    
 }
 
 .resultados {
     color: #fff;
     background-color: #C1DBDC;
-    margin-left: 15vw;
+    margin-left: 14vw;
     width: 20vw;
     border-radius: 8px;
     height: 20vh;
     overflow-y: scroll;
-    padding-top: 4px;
+    padding-top: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2vh;
 }
 
 .linhaResultado{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 12vw;
+    width: 14vw;
+    padding: 2vh;
+    margin-top: 2vh;
     border-radius: 8px;
-    background-color:#000;
+    background-color:#95bfc0;
+    cursor: pointer;
 }
 
+
+
 #fecharmodalPesquisa {
-    color: #fff;
-    margin-top: -2vh;
-    margin-left: 12vw;
-    font-family: 18pt;
+    color: #020202;
+    margin-top: 2vh;
+    position: absolute;
+    left: 40vw;
     cursor: pointer;
 
 }

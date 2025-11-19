@@ -142,17 +142,17 @@ btnSetaRecuo.addEventListener('click', () => {
 //Definindo o botãõ de abrir modal de pesquisa
 const btnAbrirModal = document.querySelector('#abrirModalPesquisar');
 
-//Atribuindo  um listner que ao clicar  o modal desaparece, asism e tela é mostrada.
-btnAbrirModal.addEventListener('click', () => {
-    modalPesquisa.style.display = 'block';
-});
-
 //Chamando a tela que vai abrir quando o modal desaparecer, ao clicar no btn de pesquisar. 
 const modalPesquisa = document.querySelector('.telaPesquisa');
 
+//Atribuindo  um listner que ao clicar  o modal desaparece, asism e tela é mostrada.
+btnAbrirModal.addEventListener('click', () => {
+    modalPesquisa.classList.remove('modal')
+});
+
 //Atribuindo que ao clicar no x co modal, o modal volta e a tela desaparece, voltando o conteudo de antes.
-modalPesquisa.querySelector('p').addEventListener('click', () => {
-    modalPesquisa.style.display = 'none';
+modalPesquisa.querySelector('h1').addEventListener('click', () => {
+   modalPesquisa.classList.add('modal')
 });
 
 
@@ -195,10 +195,7 @@ input.addEventListener("input", () => {
             //Definindo que a primeira letra vai ser maiscula
             li.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
             //Definindo um stilo
-            li.style.padding = "10px"
-            li.style.fontWeight = '800'
-            li.style.boxShadow = '1px 1px  #000'
-            li.style.cursor = 'pointer'
+            li.classList.add('linhaResultado')
             //Criando um evento de clique
             li.onclick = () => {
                 input.value = nome;
