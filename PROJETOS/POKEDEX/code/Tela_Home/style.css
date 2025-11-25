@@ -199,7 +199,8 @@ nav p {
     width: 17vw;
     background-color: #fff;
     border-radius: 10px;
-    overflow-x: scroll;
+    max-height: 20vh;  /* ou o tamanho que quiser */
+    overflow-y: auto;  /* habilita scroll */
 }
 
 /* Alterando o  lugar das habidiades */
@@ -262,7 +263,22 @@ nav p {
     left: 56.8%;
     color: #fff;
 }
+/* Alocando o tipo do pokemon */
+#tipoPokemon{
+    position: absolute;
+    top: 77.6vh;
+    left: 29.2vw;
+    height: 8.5%;
+    width: 8.7vw;
+    background-color:#8ed6d8;
+    text-align: center;
+}
 
+#tipoPokemon p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+}
 
 /* Editando o modal de pesquisa */
 .telaPesquisa {

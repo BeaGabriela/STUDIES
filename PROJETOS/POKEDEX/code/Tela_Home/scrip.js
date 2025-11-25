@@ -20,6 +20,29 @@ const traducaoHabilidades = {
     static: "Estatica"
 };
 
+//Criando as cores dos tipos de pokemon
+const coresTipo = {
+    normal: "#A8A77A",
+    fire: "#EE8130",
+    water: "#6390F0",
+    electric: "#F7D02C",
+    grass: "#7AC74C",
+    ice: "#96D9D6",
+    fighting: "#C22E28",
+    poison: "#A33EA1",
+    ground: "#E2BF65",
+    flying: "#A98FF3",
+    psychic: "#F95587",
+    bug: "#A6B91A",
+    rock: "#B6A136",
+    ghost: "#735797",
+    dragon: "#6F35FC",
+    dark: "#705746",
+    steel: "#B7B7CE",
+    fairy: "#D685AD",
+};
+
+
 
 // Criando uma variavel com o valor definindo como 1
 let NumeroIdpokemon = 1;
@@ -65,6 +88,24 @@ const direcionandoPokemon = async (PokemonId) => {
         numeroPokemon.innerHTML = "Nº:" + data.id;
         // Definindo que avariavel declarada na parte superior. agora tem o valor do id
         NumeroIdpokemon = data.id
+
+        //Pegado o tipo de pokemon
+        const tipo = data.types[0].type.name;
+        const tipoPrincipal = data.types[0].type.name; 
+
+        var tipoPokemonMostrar = document.querySelector("#mostrarTipoPokemon")
+        tipoPokemonMostrar.innerHTML = "Tipo: " + tipo
+
+
+        //Mudando a cor do modal de habilidadews de acordo com o tipo
+        var corHabilidades = document.querySelector("#divHabilidades")
+        corHabilidades.style.backgroundColor = coresTipo[tipoPrincipal];
+         corHabilidades.style.color = 'white'; // para o texto não sumir
+
+         //Mudnado a cor do mdoald e tipo d pokemon
+        var corTipo = document.querySelector("#tipoPokemon")
+        corTipo.style.backgroundColor = coresTipo[tipoPrincipal];
+        corTipo.style.color = 'white'; // para o texto não sumir
 
 
         // Definindo a imagem do pokemon
